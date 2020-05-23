@@ -20,6 +20,8 @@ modify_date: 2020-05-23
 
 ## 搭建过程
 
+### 方法一：Fork TeXt主题库
+
 1. 使用你的GitHub账号，对TeXt主题仓库<https://github.com/kitian616/jekyll-TeXt-theme>进行`fork`操作
 
    ![github-fork](https://i.loli.net/2020/05/23/y3CbEPBxSsHr7Ld.jpg)
@@ -29,6 +31,28 @@ modify_date: 2020-05-23
    ![github-rename-repo](https://i.loli.net/2020/05/23/h6UuFY4m1t72Ioy.jpg)
 
 3. 至此，基础架构已搭建完成，可以通过地址https://{username}.github.io访问博客页面
+
+### 方法二：复制TeXt主题库
+
+对比方法一，方法二稍微麻烦一点。但方法一由于是通过`fork`操作来创建的仓库，所以对该仓库的提交不纳入GitHub账户的贡献统计中，也就是说不影响下图的绿点统计
+
+![image-20200523103145447](https://i.loli.net/2020/05/23/KIqdicwLN8ShbzF.png)
+
+因此如果想把对该仓库的修改纳入贡献统计中，需要自己创建一个仓库，然后把TeXt主题库的代码放到新建仓库中，完成搭建。
+
+1. 使用你的GitHub账户，创建一个仓库，仓库名格式为 `{username}.github.io` ，`{username}`为你的Github账户登录的用户名。例如，用户名为`sophshep`，则更改仓库名为`sophshep.github.io`
+
+   ![image-20200523104136682](https://i.loli.net/2020/05/23/nlcfrh7axC6mMTw.png)
+
+2. 将刚新建的仓库克隆到本地
+
+3. 下载TeXt主题仓库<https://github.com/kitian616/jekyll-TeXt-theme>的master分支代码压缩包到本地
+
+   ![image-20200523104533438](https://i.loli.net/2020/05/23/RWXhZkeYVG3DgaH.png)
+
+4. 解压缩代码压缩包，把压缩包的内容复制到步骤2克隆的本地仓库中，并提交
+
+5. 至此，基础架构已搭建完成，可以通过地址https://{username}.github.io访问博客页面
 
 ## 上传博客内容
 
