@@ -20,7 +20,7 @@ modify_date: 2021-01-02
 
 ```xml
 location / {
-	proxy_pass http://localhost:10050;
+    proxy_pass http://localhost:10050;
 }
 ```
 
@@ -34,11 +34,11 @@ http://localhost/doubucket/items/hello Nginx会把请求转移到 http://localho
 
 ```xml
 location /static/ {
-	root   html;
+    root   html;
 }
 
 location / {
-	proxy_pass http://localhost:10050;
+    proxy_pass http://localhost:10050;
 }
 ```
 
@@ -65,7 +65,7 @@ upstream doubucket {
 
 ```xml
 location / {
-	proxy_pass http://doubucket;
+    proxy_pass http://doubucket;
 }
 ```
 
