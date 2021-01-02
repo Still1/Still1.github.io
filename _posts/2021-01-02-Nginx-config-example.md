@@ -8,7 +8,7 @@ modify_date: 2021-01-02
 
 ## 前言
 
-本文将介绍如何对Nginx进行反向代理、动静分离、负载均衡的简单配置。所有配置均通过修改Nginx安装目录下的conf文件夹里面的nginx.conf文件。
+本文将介绍如何对Nginx进行反向代理、动静分离、负载均衡的简单配置。所有配置均通过修改Nginx安装目录下的conf文件夹里面的`nginx.conf`文件。
 
 <!--more-->
 
@@ -26,7 +26,7 @@ location / {
 
 访问URL：
 
-http://localhost/doubucket/items/hello Nginx会把请求转移到 http://localhost:10050/doubucket/items/hello，从而实现反向代理。
+`http://localhost/doubucket/items/hello`Nginx会把请求转移到 `http://localhost:10050/doubucket/items/hello`，从而实现反向代理。
 
 ### 动静分离
 
@@ -44,9 +44,9 @@ location / {
 
 访问URL：
 
-http://localhost/static/test.html 则直接访问Nginx安装目录下html/static/test.html
+`http://localhost/static/test.html` 则直接访问Nginx安装目录下 `html/static/test.html`
 
-http://localhost/doubucket/items/hello 则同样通过反向代理访问http://localhost:10050/doubucket/items/hello
+`http://localhost/doubucket/items/hello` 则同样通过反向代理访问 `http://localhost:10050/doubucket/items/hello`
 
 这样，静态资源Nginx服务器直接返回，动态资源通过反向代理访问其它服务器获得，实现动静分离。
 
@@ -71,13 +71,15 @@ location / {
 
 访问URL：
 
-http://localhost/doubucket/items/hello 则同样通过反向代理访问http://localhost:10050/doubucket/items/hello或者http://localhost:10051/doubucket/items/hello
+`http://localhost/doubucket/items/hello` 则同样通过反向代理访问 
+
+`http://localhost:10050/doubucket/items/hello`或者 `http://localhost:10051/doubucket/items/hello`
 
 通过设置多个上游服务器，实现简单的负载均衡。
 
 ## 总结
 
-至此，Nginx的反向代理、动静分离、负载均衡简单配置完成了，附上完整nginx.conf文件内容
+至此，Nginx的反向代理、动静分离、负载均衡简单配置完成了，附上完整`nginx.conf`文件内容
 
 ```xml
 
