@@ -8,6 +8,8 @@ modify_date: 2022-02-19
 
 ## OpenResty安装
 
+<!--more-->
+
 ```
 docker pull openresty/openresty
 docker run --name openResty -p 80:80 -d openresty/openresty
