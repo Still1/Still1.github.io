@@ -1,7 +1,7 @@
 ---
-title: Javascript的setTimeout跟随调用
+title: JavaScript的setTimeout跟随调用
 tags: 
-  - Javascript
+  - JavaScript
 modify_date: 2013-04-09
 ---
 
