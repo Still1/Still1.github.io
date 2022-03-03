@@ -16,7 +16,7 @@ modify_date: 2022-01-31
 ```javascript
 function Animal(name) {
     this.name = name;
-};
+}
 
 
 Animal.prototype = {

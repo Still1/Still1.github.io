@@ -96,13 +96,14 @@ tags:
   font-family-code:       ("PT Mono", Monaco, Menlo, "Source Code Pro", Consolas, "Courier New", "lucida console", "Microsoft YaHei", monospace),
 ```
 
-### 修改代码块字体大小
+### 修改代码块字体大小和行高
 
-修改`_sass\common\_reset.scss`文件，`font-size-xs` 改成 `font-size-sm`
+修改`_sass\common\_reset.scss`文件
 
 ```scss
 code {
     font-size: map-get($base, font-size-sm);
+    line-height: map-get($base, line-height-lg);
 }
 ```
 
