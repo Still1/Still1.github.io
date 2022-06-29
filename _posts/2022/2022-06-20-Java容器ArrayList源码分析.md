@@ -5,9 +5,17 @@ tags:
 modify_date: 2022-06-20
 ---
 
-## Iterator接口
+## JDK版本
+
+本文源码基于JDK8
+
+## ArrayList类继承关系
 
 <!--more-->
+
+![image-20220629170718914](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/202206291707130.png)
+
+## Iterator接口
 
 ```java
 public interface Iterator<E> {
@@ -1028,7 +1036,7 @@ public class ArrayList<E> extends AbstractList<E>
     }
 
     public void ensureCapacity(int minCapacity) {
-        // 假如elementData是DEFAULTCAPACITY_EMPTY_ELEMENTDATA空数组，则至少扩容到DEFAULT_CAPACITY
+        // 假如elementData是DEFAULTCAPACITY_EMPTY_ELEMENTDATA空数组，则minCapacity小于或等于DEFAULT_CAPACITY无需再确认
         int minExpand = (elementData != DEFAULTCAPACITY_EMPTY_ELEMENTDATA)
             ? 0
             : DEFAULT_CAPACITY;
