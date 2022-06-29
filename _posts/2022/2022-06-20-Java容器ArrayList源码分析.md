@@ -1,5 +1,5 @@
 ---
-title: Java容器源码分析
+title: Java容器ArrayList源码分析
 tags: 
   - Java
 modify_date: 2022-06-20
@@ -1890,9 +1890,7 @@ public class ArrayList<E> extends AbstractList<E>
     @Override
     public boolean removeIf(Predicate<? super E> filter) {
         Objects.requireNonNull(filter);
-        // figure out which elements are to be removed
-        // any exception thrown from the filter predicate at this stage
-        // will leave the collection unmodified
+        
         int removeCount = 0;
         final BitSet removeSet = new BitSet(size);
         final int expectedModCount = modCount;
@@ -1901,6 +1899,7 @@ public class ArrayList<E> extends AbstractList<E>
             @SuppressWarnings("unchecked")
             final E element = (E) elementData[i];
             if (filter.test(element)) {
+                // 假如第i个元素符合条件，则把removeSet中的对应位设置为true，标记这个元素需要被删除
                 removeSet.set(i);
                 removeCount++;
             }
@@ -1909,16 +1908,17 @@ public class ArrayList<E> extends AbstractList<E>
             throw new ConcurrentModificationException();
         }
 
-        // shift surviving elements left over the spaces left by removed elements
         final boolean anyToRemove = removeCount > 0;
         if (anyToRemove) {
             final int newSize = size - removeCount;
+            // 将没被删除的元素移动到ArrayList的最左边
             for (int i=0, j=0; (i < size) && (j < newSize); i++, j++) {
+                // 从当前位置开始，获取下一个标记为false的位置，也就是下一个不被删除的元素位置
                 i = removeSet.nextClearBit(i);
                 elementData[j] = elementData[i];
             }
             for (int k=newSize; k < size; k++) {
-                elementData[k] = null;  // Let gc do its work
+                elementData[k] = null;
             }
             this.size = newSize;
             if (modCount != expectedModCount) {
@@ -1936,6 +1936,7 @@ public class ArrayList<E> extends AbstractList<E>
         Objects.requireNonNull(operator);
         final int expectedModCount = modCount;
         final int size = this.size;
+        // 相对于List接口的默认实现，遍历方式从ListIterator改为了数组for循环遍历
         for (int i=0; modCount == expectedModCount && i < size; i++) {
             elementData[i] = operator.apply((E) elementData[i]);
         }
