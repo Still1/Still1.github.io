@@ -2,7 +2,7 @@
 title: Spring IoC容器简述
 tags: 
   - Spring
-  - 面试题
+  - Summary
 modify_date: 2018-09-07
 
 ---

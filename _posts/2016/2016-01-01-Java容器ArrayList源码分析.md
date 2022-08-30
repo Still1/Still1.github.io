@@ -2,7 +2,7 @@
 title: Java容器ArrayList源码分析
 tags: 
   - Java
-modify_date: 2022-06-20
+modify_date: 2016-01-01
 ---
 
 ## JDK版本
@@ -1777,6 +1777,7 @@ public class ArrayList<E> extends AbstractList<E>
         return new ArrayListSpliterator<>(this, 0, -1, 0);
     }
 
+    // 跳过Spliterator的分析
     /** Index-based split-by-two, lazily initialized Spliterator */
     static final class ArrayListSpliterator<E> implements Spliterator<E> {
 
