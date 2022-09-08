@@ -38,3 +38,14 @@ docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
 使用用户名root和初始密码登录
 
+## SSH端口
+
+由于22端口在远程操作时被占用，GitLab的SSH端口映射到2222，在与GitLab建立SSH连接时，需要配置端口
+
+打开`~/.ssh/config`文件，如果没有则新建
+
+```
+Host gitlab.oc.com
+Port 2222
+```
+
