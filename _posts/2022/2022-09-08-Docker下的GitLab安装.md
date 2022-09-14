@@ -40,6 +40,8 @@ docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 
 ## SSH端口
 
+### 修改本地提交密钥配置的端口
+
 由于22端口在远程操作时被占用，GitLab的SSH端口映射到2222，在与GitLab建立SSH连接时，需要配置端口
 
 打开`~/.ssh/config`文件，如果没有则新建
@@ -48,4 +50,14 @@ docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 Host gitlab.oc.com
 Port 2222
 ```
+
+### 修改GitLab的SSH默认端口
+
+修改GitLab服务器`/srv/gitlab/config/gitlab.rb`配置文件，修改后重启Docker容器
+
+```
+gitlab_rails['gitlab_shell_ssh_port']= 2222
+```
+
+
 
