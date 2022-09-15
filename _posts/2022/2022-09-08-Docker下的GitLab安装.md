@@ -5,7 +5,7 @@ tags:
   - Docker
 ---
 
-## 配置环境变量
+## 配置临时环境变量
 
 ```shell
 export GITLAB_HOME=/srv/gitlab
@@ -17,7 +17,7 @@ export GITLAB_HOME=/srv/gitlab
 
 ```
 docker run --detach \
-  --hostname gitlab.oc.com \
+  --hostname gitlab.oliverclio.com \
   --publish 443:443 --publish 80:80 --publish 2222:22 \
   --name gitlab \
   --restart always \
@@ -47,7 +47,7 @@ docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 打开`~/.ssh/config`文件，如果没有则新建
 
 ```
-Host gitlab.oc.com
+Host gitlab.oliverclio.com
 Port 2222
 ```
 
@@ -59,5 +59,20 @@ Port 2222
 gitlab_rails['gitlab_shell_ssh_port']= 2222
 ```
 
+## 数据备份与恢复
 
+### 数据备份
+
+```
+docker exec -it gitlab /bin/bash
+gitlab-rake gitlab:backup:create
+```
+
+备份文件 `usr/local/docker/gitlab/data/backups/gitlab_backup.tar`
+
+### 数据恢复
+
+```
+gitlab-rake gitlab:backup:restore BACKUP=gitlab_backup
+```
 
