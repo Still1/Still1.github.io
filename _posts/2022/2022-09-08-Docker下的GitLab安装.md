@@ -13,6 +13,8 @@ export GITLAB_HOME=/srv/gitlab
 
 <!--more-->
 
+
+
 ## 启动GitLab容器
 
 ```
@@ -28,6 +30,8 @@ docker run --detach \
   registry.gitlab.cn/omnibus/gitlab-jh:latest
 ```
 
+
+
 ## 初始登录
 
 获取初始密码
@@ -37,6 +41,8 @@ docker exec -it gitlab grep 'Password:' /etc/gitlab/initial_root_password
 ```
 
 使用用户名root和初始密码登录
+
+
 
 ## SSH端口
 
@@ -59,7 +65,11 @@ Port 2222
 gitlab_rails['gitlab_shell_ssh_port']= 2222
 ```
 
+
+
 ## 数据备份与恢复
+
+docker方式启动，数据都在数据卷中，一般不需要备份
 
 ### 数据备份
 
@@ -76,3 +86,12 @@ gitlab-rake gitlab:backup:create
 gitlab-rake gitlab:backup:restore BACKUP=gitlab_backup
 ```
 
+
+
+## GitLab无法访问Gravatar头像服务解决
+
+修改GitLab服务器`/srv/gitlab/config/gitlab.rb`配置文件，修改后重启Docker容器
+
+```
+gitlab_rails['gravatar_plain_url'] = 'https://gravatar.loli.net/avatar/%{hash}?s=%{size}&d=identicon'
+```
