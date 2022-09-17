@@ -74,12 +74,26 @@ EXPOSE 80
 CMD /bin/bash
 ```
 
+Spring Boot应用镜像例子
+```dockerfile
+FROM openjdk:11
+RUN mkdir -p /opt/languageTrainer
+COPY LanguageTrainer.jar /opt/languageTrainer/LanguageTrainer.jar
+EXPOSE 8080
+CMD ["nohup", "java", "-jar", "/opt/languageTrainer/LanguageTrainer.jar", "&"]
+```
+
 ## 构建镜像
 
 在存在Dockerfile的目录下执行
 
 ```shell
+# 最后的点，表示Docker构建的上下文环境，同时也是COPY命令的相对路径
 docker build -t centosjava8:1.5 .
+```
+
+```shell
+docker build -f /opt/languageTrainer/Dockerfile -t "language-trainer" /opt/languageTrainer/
 ```
 
 
