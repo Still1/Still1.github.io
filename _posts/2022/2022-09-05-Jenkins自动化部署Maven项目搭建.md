@@ -48,9 +48,7 @@ docker run \
 * Maven Intergration
 * Publish Over SSH
 
-
-
-## Jenkins插件更新网络问题解决
+### Jenkins插件更新网络问题解决
 
 点击插件更新提示的Correct按钮或点击下方的Manage Plugins
 
@@ -186,3 +184,6 @@ sudo docker build -f /opt/languageTrainer/Dockerfile -t "language-trainer" /opt/
 sudo docker run -p 8080:8080 --name "language-trainer" --restart always -d "language-trainer"
 ```
 
+### 配置Jenkins最后清理工作
+
+![image-20220918104307729](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20220918104349.png)
