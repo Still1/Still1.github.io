@@ -70,13 +70,13 @@ docker run \
 
 ### 配置JDK
 
-![image-20220906061738683](upload\image-20220906061738683.png)
+![image-20220906061738683](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20220922061337.png)
 
 `/opt/java/openjdk`
 
 ### 配置Git
 
-![image-20220906062109405](upload\image-20220906062109405.png)
+![image-20220906062109405](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20220922061350.png)
 
 `/usr/bin/git`
 
