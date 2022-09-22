@@ -16,12 +16,12 @@ docker pull mysql:5.7
 
 ## 创建容器并启动MySQL
 
-```
-docker run -p 13333:3306 --name mysql \
--v /mydata/mysql/log:/var/log/mysql \
--v /mydata/mysql/data:/var/lib/mysql \
--v /mydata/mysql/conf:/etc/mysql \
--e MYSQL_ROOT_PASSWORD=yourpassword \
+```shell
+docker run -p 3306:3306 --name mysql \
+-v /opt/volume/mysql/log:/var/log/mysql \
+-v /opt/volume/mysql/data:/var/lib/mysql \
+-v /opt/volume/mysql/conf:/etc/mysql \
+-e MYSQL_ROOT_PASSWORD=mysqlrootroot \
 -d mysql:5.7
 ```
 
@@ -31,16 +31,16 @@ docker run -p 13333:3306 --name mysql \
 
 ```
 [mysqld]
-init_connect='SET collation_connection = utf8_unicode_ci'
-init_connect='SET NAMES utf8'
-character-set-server=utf8
-collation-server=utf8_unicode_ci
+init_connect='SET collation_connection = utf8mb4_unicode_ci'
+init_connect='SET NAMES utf8mb4'
+character-set-server=utf8mb4
+collation-server=utf8mb4_unicode_ci
 skip-character-set-client-handshake
 skip-name-resolve
 
 [client]
-default-character-set=utf8
+default-character-set=utf8mb4
 
 [mysql]
-default-character-set=utf8
+default-character-set=utf8mb4
 ```
