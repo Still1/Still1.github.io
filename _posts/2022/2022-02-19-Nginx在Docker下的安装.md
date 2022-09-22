@@ -15,22 +15,22 @@ Nginx挂载数据卷，配置文件夹和页面文件夹不会自动复制到宿
 <!--more-->
 
 ```shell
-mkdir -p /opt/volumn/nginx
+mkdir -p /opt/volume/nginx
 
 docker run --name nginx --rm -d nginx
-docker cp nginx:/etc/nginx /opt/volumn/nginx
-mv /opt/volumn/nginx/nginx /opt/volumn/nginx/conf
+docker cp nginx:/etc/nginx /opt/volume/nginx
+mv /opt/volume/nginx/nginx /opt/volume/nginx/conf
 
 # 复制页面文件夹内容，可选
-docker cp nginx:/usr/share/nginx/html /opt/volumn/nginx
+docker cp nginx:/usr/share/nginx/html /opt/volume/nginx
 
 docker stop nginx
 
 docker run -p 80:80 --name nginx \
 --restart always \
--v /opt/volumn/nginx/conf:/etc/nginx \
--v /opt/volumn/nginx/html:/usr/share/nginx/html \
--v /opt/volumn/nginx/log:/var/log/nginx \
+-v /opt/volume/nginx/conf:/etc/nginx \
+-v /opt/volume/nginx/html:/usr/share/nginx/html \
+-v /opt/volume/nginx/log:/var/log/nginx \
 -d nginx
 ```
 
