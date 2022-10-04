@@ -27,6 +27,7 @@ npm i vue-router@3
 `router/index.js`
 
 ```js
+import Vue from 'vue';
 import VueRouter from 'vue-router';
 import About from '../pages/About';
 import Home from '../pages/Home';
