@@ -1,8 +1,7 @@
 ---
 title: Java容器ArrayList源码分析
 tags: 
-  - Java
-modify_date: 2016-01-01
+  - 源码分析
 ---
 
 ## JDK版本

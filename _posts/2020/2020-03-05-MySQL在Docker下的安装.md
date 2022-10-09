@@ -1,9 +1,7 @@
 ---
 title: MySQL在Docker下的安装
 tags: 
-  - MySQL
-  - Docker
-modify_date: 2020-03-05
+  - 实践案例
 ---
 
 ## 下载MySQL镜像

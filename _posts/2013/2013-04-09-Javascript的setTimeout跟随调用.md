@@ -1,11 +1,10 @@
 ---
 title: JavaScript的setTimeout跟随调用
 tags: 
-  - JavaScript
-modify_date: 2013-04-09
+  - 实践案例
 ---
 
-在Javascript中，如需要在一个函数调用结束后调用另外一个函数，可以使用
+在JavaScript中，如需要在一个函数调用结束后调用另外一个函数，可以使用
 
 <!--more-->
 

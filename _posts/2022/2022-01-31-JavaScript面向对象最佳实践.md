@@ -1,9 +1,7 @@
 ---
 title: JavaScript面向对象最佳实践
 tags: 
-  - JavaScript
-  - Summary
-modify_date: 2022-01-31
+  - 知识总结
 ---
 
 ## 构造方法加原型对象实现

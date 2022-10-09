@@ -1,7 +1,7 @@
 ---
 title: Git同时推送GitHub和GitLab
 tags: 
-  - Git
+  - 实践案例
 ---
 
 ## 实现方式

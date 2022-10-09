@@ -1,8 +1,7 @@
 ---
 title: JQuery的each方法实现循环的break和continue
 tags: 
-  - JQuery
-modify_date: 2018-03-31
+  - 实践案例
 ---
 
 ## 实现方法

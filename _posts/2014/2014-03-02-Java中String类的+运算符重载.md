@@ -1,9 +1,7 @@
 ---
 title: Java中String类的+运算符重载
 tags: 
-  - Java
-  - Summary
-modify_date: 2014-03-02
+  - 知识总结
 ---
 
 ## String的运算符重载

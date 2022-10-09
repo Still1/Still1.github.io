@@ -1,8 +1,7 @@
 ---
 title: OpenResty发送HTTP请求
 tags: 
-  - OpenResty
-modify_date: 2021-05-16
+  - 实践案例
 ---
 
 ## OpenResty第三方插件lua-resty-http发送HTTP请求

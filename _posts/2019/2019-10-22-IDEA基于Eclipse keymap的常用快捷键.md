@@ -1,8 +1,7 @@
 ---
 title: IDEA基于Eclipse keymap的常用快捷键
 tags: 
-  - IDEA
-modify_date: 2019-10-22
+  - 实践案例
 ---
 
 ## 常用快捷键

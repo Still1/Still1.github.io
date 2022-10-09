@@ -1,9 +1,7 @@
 ---
 title: JavaScript调用eval方法将JSON字符串解析为对象
 tags: 
-  - JavaScript
-  - JSON
-modify_date: 2013-05-30
+  - 实践案例
 ---
 
 ```javascript

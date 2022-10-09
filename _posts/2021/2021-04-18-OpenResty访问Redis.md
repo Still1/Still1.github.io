@@ -1,9 +1,7 @@
 ---
 title: OpenResty访问Redis
 tags: 
-  - OpenResty
-  - Redis
-modify_date: 2021-04-18
+  - 实践案例
 ---
 
 ## OpenResty内置redis2-nginx-module访问Redis

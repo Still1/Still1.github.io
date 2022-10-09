@@ -1,9 +1,7 @@
 ---
 title: Eclipse中将项目关联到SVN
 tags: 
-  - SVN
-  - Eclipse
-modify_date: 2014-07-08
+  - 实践案例
 ---
 
 ## 操作步骤

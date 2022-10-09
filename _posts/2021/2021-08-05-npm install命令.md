@@ -1,7 +1,7 @@
 ---
 title: npm install命令
 tags: 
-  - Node.js
+  - 知识总结
 ---
 
 ## npm install命令常用参数

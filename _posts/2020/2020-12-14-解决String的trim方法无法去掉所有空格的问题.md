@@ -1,8 +1,7 @@
 ---
 title: 解决String的trim方法无法去掉所有空格的问题
 tags: 
-  - Java
-modify_date: 2020-12-14
+  - 实践案例
 ---
 
 ## 问题背景

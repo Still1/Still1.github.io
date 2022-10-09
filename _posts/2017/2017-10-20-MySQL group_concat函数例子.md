@@ -1,8 +1,7 @@
 ---
 title: MySQL group_concat函数例子
 tags: 
-  - MySQL
-modify_date: 2017-10-20
+  - 实践案例
 ---
 
 ## SQL例子

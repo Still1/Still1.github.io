@@ -1,7 +1,7 @@
 ---
 title: Vue Router使用
 tags: 
-  - Vue
+  - 实践案例
 ---
 
 ## 安装Vue Router插件

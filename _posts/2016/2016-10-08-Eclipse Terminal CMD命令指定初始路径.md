@@ -1,8 +1,7 @@
 ---
 title: Eclipse Terminal CMD命令指定初始路径
 tags: 
-  - Eclipse
-modify_date: 2016-10-08
+  - 实践案例
 ---
 
 ## 操作步骤

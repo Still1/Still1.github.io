@@ -1,8 +1,7 @@
 ---
 title: Docker下的GitLab安装
 tags: 
-  - GitLab
-  - Docker
+  - 实践案例
 ---
 
 ## 配置临时环境变量

@@ -1,9 +1,7 @@
 ---
 title: HttpServletResponse触发浏览器下载文件
 tags: 
-  - Servlet
-  - HTTP
-modify_date: 2013-10-16
+  - 实践案例
 ---
 
 ## Java代码例子

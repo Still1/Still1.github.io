@@ -1,10 +1,7 @@
 ---
 title: GitHub Pages + Jekyll + TeXt 个人博客实现
 tags: 
-  - GitHub Pages
-  - Jekyll
-  - TeXt
-modify_date: 2020-05-23
+  - 实践案例
 ---
 
 ## 前言

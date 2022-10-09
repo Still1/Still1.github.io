@@ -1,8 +1,7 @@
 ---
 title: GitLab提交代码触发Jenkins构建
 tags: 
-  - Jenkins
-  - GitLab
+  - 实践案例
 ---
 
 ## 安装Jenkins插件

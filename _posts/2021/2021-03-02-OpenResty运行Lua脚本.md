@@ -1,9 +1,7 @@
 ---
 title: OpenResty运行Lua脚本
 tags: 
-  - OpenResty
-  - Lua
-modify_date: 2021-03-02
+  - 实践案例
 ---
 
 ## 代码例子

@@ -1,9 +1,7 @@
 ---
 title: SQL中delete和truncate
 tags: 
-  - SQL
-  - Summary
-modify_date: 2016-06-20
+  - 知识总结
 ---
 
 ## 作用

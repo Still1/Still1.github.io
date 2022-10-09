@@ -1,8 +1,7 @@
 ---
 title: 解决EasyUI的tree组件中，原来是叶子节点的节点，加了下级节点后，无法reload的问题
 tags: 
-  - EasyUI
-modify_date: 2016-05-02
+  - 实践案例
 ---
 
 ## 问题描述

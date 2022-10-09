@@ -1,8 +1,7 @@
 ---
 title: JavaScript获得当前时间的年月日
 tags: 
-  - JavaScript
-modify_date: 2013-07-01
+  - 实践案例
 ---
 
 ## 获得当前时间的年

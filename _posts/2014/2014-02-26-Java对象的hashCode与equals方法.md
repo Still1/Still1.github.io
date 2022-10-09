@@ -1,9 +1,7 @@
 ---
 title: Java对象的hashCode与equals方法
 tags: 
-  - Java
-  - Summary
-modify_date: 2014-02-26
+  - 知识总结
 ---
 
 ## hashCode与equals方法的重写原则

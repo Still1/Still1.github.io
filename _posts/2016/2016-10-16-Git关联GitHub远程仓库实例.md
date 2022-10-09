@@ -1,12 +1,11 @@
 ---
 title: Git关联GitHub远程仓库实例
 tags: 
-  - Git
-modify_date: 2016-10-16
+  - 实践案例
 ---
 ## 代码例子
 
-```
+```shell
 git init
 git add README.md
 git commit -m "first commit"

@@ -1,9 +1,7 @@
 ---
 title: Nginx在Docker下的安装
 tags: 
-  - Nginx
-  - Docker
-modify_date: 2022-02-19
+  - 实践案例
 ---
 
 ## Nginx安装

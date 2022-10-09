@@ -1,9 +1,7 @@
 ---
 title: Redis在Docker下的安装
 tags: 
-  - Redis
-  - Docker
-modify_date: 2020-03-05
+  - 实践案例
 ---
 
 ## 下载redis镜像

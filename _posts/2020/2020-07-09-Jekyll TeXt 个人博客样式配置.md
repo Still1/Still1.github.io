@@ -1,9 +1,7 @@
 ---
 title: Jekyll TeXt 个人博客样式配置
 tags: 
-  - Jekyll
-  - TeXt
-modify_date: 2020-07-09
+  - 实践案例
 ---
 
 ## 修改_config.yml
