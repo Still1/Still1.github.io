@@ -1,12 +1,9 @@
 ---
 title: IDEA基于Eclipse keymap的常用快捷键
-tags: 
-  - 实践案例
+tags: [IntelliJ IDEA]
 ---
 
 ## 常用快捷键
-
-<!--more-->
 
 * `Ctrl + Space` 代码智能提示
 * `Ctrl + G` 找到调用此类、方法或变量的位置
