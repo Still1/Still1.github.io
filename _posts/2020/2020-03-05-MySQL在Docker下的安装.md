@@ -1,12 +1,9 @@
 ---
 title: MySQL在Docker下的安装
-tags: 
-  - 实践案例
+tags: [Docker, MySQL, 系统运维, 软件开发]
 ---
 
 ## 下载MySQL镜像
-
-<!--more-->
 
 ```
 docker pull mysql:5.7
@@ -27,6 +24,9 @@ docker stop mysql
 
 docker run -p 3306:3306 --name mysql \
 --restart always \
+--network language-trainer \
+-v /etc/timezone:/etc/timezone:ro \
+-v /etc/localtime:/etc/localtime:ro \
 -v /opt/volume/mysql/log:/var/log/mysql \
 -v /opt/volume/mysql/data:/var/lib/mysql \
 -v /opt/volume/mysql/conf:/etc/mysql \
@@ -53,6 +53,12 @@ default-character-set=utf8mb4
 default-character-set=utf8mb4
 ```
 
+重启MySQL
+
+```shell
+docker restart mysql
+```
+
 创建一个数据库，验证字符集是否修改成功
 
 ```sql
@@ -66,3 +72,7 @@ show variables like 'character%';
 * `character_set_database`
 * `character_set_results`
 * `character_set_server`
+
+验证`character_set_system`变量值是否为`utf8`
+
+> [MySQL字符集最佳实践](https://blog.oliverclio.com/2022/07/12/MySQL%E5%AD%97%E7%AC%A6%E9%9B%86%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.html)

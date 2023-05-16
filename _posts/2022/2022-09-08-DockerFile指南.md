@@ -1,14 +1,11 @@
 ---
 title: DockerFile指南
-tags: 
-  - 实践案例
+tags: [Docker, 系统运维]
 ---
 
-## 关键字 
+## 关键字
 
 FROM 指定基础镜像
-
-<!--more--> 
 
 RUN 构建镜像时执行
 
@@ -74,8 +71,11 @@ CMD /bin/bash
 ```
 
 Spring Boot应用镜像例子
+
 ```dockerfile
 FROM openjdk:11
+ENV TZ Asia/Shanghai  
+RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone
 RUN mkdir -p /opt/languageTrainer
 COPY LanguageTrainer.jar /opt/languageTrainer/LanguageTrainer.jar
 EXPOSE 8080
@@ -94,6 +94,3 @@ docker build -t centosjava8:1.5 .
 ```shell
 docker build -f /opt/languageTrainer/Dockerfile -t "language-trainer" /opt/languageTrainer/
 ```
-
-
-
