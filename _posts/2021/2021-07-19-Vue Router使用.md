@@ -193,6 +193,7 @@ this.$router.replace(path);
 #### 加入参数
 
 ```html
+<!-- {% raw %} -->
 <ul>
   <li v-for="message in messageList" :key="message.id">
     <router-link :to="`/home/message/detail?id=${message.id}&content=${message.content}`">{{message.content}}</router-link>
@@ -201,6 +202,7 @@ this.$router.replace(path);
     <button @click="replace(message)">replace</button>
   </li>
 </ul>
+<!-- {% endraw %} -->
 ```
 
 ```js
@@ -400,7 +402,7 @@ export default {
 
 ```html
 <keep-alive>
-	<router-view></router-view>
+    <router-view></router-view>
 </keep-alive>
 ```
 
