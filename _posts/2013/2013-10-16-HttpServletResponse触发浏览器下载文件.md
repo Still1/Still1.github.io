@@ -1,12 +1,9 @@
 ---
 title: HttpServletResponse触发浏览器下载文件
-tags: 
-  - 实践案例
+tags: [软件开发, Java, Servlet]
 ---
 
 ## Java代码例子
-
-<!--more-->
 
 ```java
 public static void download(HttpServletResponse response, String fileName, byte[] content) throws Exception {
@@ -23,7 +20,5 @@ public static void download(HttpServletResponse response, String fileName, byte[
 ```
 
 MIME类型`application/octet-stream`可以表示任意二进制数据
-
 HTTP头`Content-Disposition`加上`attachement`可以触发浏览器下载
-
 注意：使用AJAX方式，无法触发浏览器下载

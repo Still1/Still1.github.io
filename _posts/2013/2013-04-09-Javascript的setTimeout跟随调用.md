@@ -5,9 +5,7 @@ tags: [软件开发, JavaScript]
 
 在JavaScript中，如需要在一个函数调用结束后调用另外一个函数，可以使用
 
-<!--more-->
-
-```
+```javaScript
 setTimeout(function() {}, 0);
 ```
 

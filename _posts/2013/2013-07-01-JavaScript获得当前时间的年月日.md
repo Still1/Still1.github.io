@@ -1,12 +1,10 @@
 ---
 title: JavaScript获得当前时间的年月日
-tags: 
-  - 实践案例
+tags: [JavaScript, 软件开发]
 ---
 
 ## 获得当前时间的年
 
-<!--more-->
 
 ```javascript
 new Date().getFullYear()
@@ -23,4 +21,3 @@ new Date().getMonth() + 1
 ```javascript
 new Date().getDate()
 ```
-
