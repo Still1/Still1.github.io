@@ -1,14 +1,11 @@
 ---
 title: Java中String类的+运算符重载
-tags: 
-  - 知识总结
+tags: [Java, 概念原理]
 ---
 
 ## String的运算符重载
 
 `String`中的`+`和`+=`是Java中仅有的两个重载运算符
-
-<!--more-->
 
 ```java
 String s = "a" + "b" + "c";

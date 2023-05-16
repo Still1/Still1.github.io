@@ -1,12 +1,9 @@
 ---
 title: Java对象的hashCode与equals方法
-tags: 
-  - 知识总结
+tags: [Java]
 ---
 
 ## hashCode与equals方法的重写原则
-
-<!--more-->
 
 ### 唯一原则
 
@@ -19,5 +16,4 @@ tags:
 ### 推论
 
 `hashCode`方法返回的哈希值相等，无法判断`equals`方法的返回结果
-
 `equals`方法判断为`false`，无法判断`hashCode`方法返回的哈希值是否相等
