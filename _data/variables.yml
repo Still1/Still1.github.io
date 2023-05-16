@@ -71,7 +71,7 @@ sources:
       js: '/assets/js/gitalk-1.2.2.min.js'
       css: '/assets/css/gitalk-1.2.2.css'
     valine: '/assets/js/Valine-1.5.1.min.js'
-    mathjax: '/assets/js/Mathjax-2.7.4.js'
+    mathjax: 'https://unpkg.com/mathjax@2.7.4/unpacked/MathJax.js?config=TeX-MML-AM_CHTML'
     mermaid: '/assets/js/mermaid-8.0.0.min.js'
 
 
