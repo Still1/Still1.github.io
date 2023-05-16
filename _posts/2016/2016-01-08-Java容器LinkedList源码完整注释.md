@@ -1,16 +1,12 @@
 ---
-title: Java容器LinkedList源码分析
-tags: 
-  - 源码分析
+title: Java容器LinkedList源码完整注释
+tags: [Java, 源码分析, 概念原理]
 ---
 
-## JDK版本
-
 本文源码基于JDK8
+{:.info}
 
 ## LinkedList类继承关系
-
-<!--more-->
 
 ![image-20220708125246311](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/202207081252056.png)
 

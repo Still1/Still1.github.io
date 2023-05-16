@@ -1,7 +1,6 @@
 ---
 title: Git关联GitHub远程仓库实例
-tags: 
-  - 实践案例
+tags: [软件开发, Git, GitHub]
 ---
 ## 代码例子
 
@@ -12,4 +11,3 @@ git commit -m "first commit"
 git remote add origin https://github.com/Still1/still-context.git
 git push -u origin master
 ```
-

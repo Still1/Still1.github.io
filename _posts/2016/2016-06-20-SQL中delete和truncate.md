@@ -1,14 +1,11 @@
 ---
 title: SQL中delete和truncate
-tags: 
-  - 知识总结
+tags: [SQL, 数据库]
 ---
 
 ## 作用
 
 都可以用于删除一张数据表的全部数据
-
-<!--more-->
 
 ```sql
 -- 删除表a的全部数据
