@@ -1,7 +1,6 @@
 ---
 title: Nginx在Docker下的安装
-tags: 
-  - 实践案例
+tags: [Docker, Nginx, 系统运维, 软件开发]
 ---
 
 ## Nginx安装
@@ -9,8 +8,6 @@ tags:
 Nginx挂载数据卷，配置文件夹和页面文件夹不会自动复制到宿主机，日志文件夹会自动复制。
 
 需要先把配置文件手动复制到挂载数据卷里面，否则无法正常启动。页面文件可以根据需要决定是否手动复制。
-
-<!--more-->
 
 ```shell
 mkdir -p /opt/volume/nginx
@@ -26,6 +23,9 @@ docker stop nginx
 
 docker run -p 80:80 --name nginx \
 --restart always \
+--network language-trainer \
+-v /etc/timezone:/etc/timezone:ro \
+-v /etc/localtime:/etc/localtime:ro \
 -v /opt/volume/nginx/conf:/etc/nginx \
 -v /opt/volume/nginx/html:/usr/share/nginx/html \
 -v /opt/volume/nginx/log:/var/log/nginx \
@@ -56,10 +56,43 @@ docker run --name openResty -p 80:80 -d \
 openresty/openresty
 ```
 
+## 配置文件
+
+修改`conf/conf.d/default.conf`
+
+简单例子
+
+```
+server {
+    listen       80;
+    listen  [::]:80;
+    server_name  localhost;
+
+    #access_log  /var/log/nginx/host.access.log  main;
+   
+    location /api/ {
+        proxy_pass http://language-trainer:8080/;
+    }    
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+```
+
 ## 更新配置文件
 
 ```shell
 docker exec openResty nginx -t
 docker exec openResty nginx -s reload
 ```
-

@@ -1,12 +1,9 @@
 ---
 title: 使用InputStream读入字符串最佳实践
-tags: 
-  - 实践案例
+tags: [软件开发, Java]
 ---
 
 ## 字节流，效率最高
-
-<!--more-->
 
 ```java
 byte[] buffer = new byte[1024];

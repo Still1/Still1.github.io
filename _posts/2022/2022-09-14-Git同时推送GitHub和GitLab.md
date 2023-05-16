@@ -1,7 +1,6 @@
 ---
 title: Git同时推送GitHub和GitLab
-tags: 
-  - 实践案例
+tags: [软件开发, Git, GitHub, GitLab]
 ---
 
 ## 实现方式
@@ -17,8 +16,6 @@ tags:
 ## 远端仓库设置多个URL
 
 加上GitLab远端仓库的URL
-
-<!--more-->
 
 ```
 git remote set-url --add origin ssh://git@gitlab.oc.com:2222/oliver/languagetrainer.git

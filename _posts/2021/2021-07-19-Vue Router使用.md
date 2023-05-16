@@ -1,7 +1,6 @@
 ---
 title: Vue Router使用
-tags: 
-  - 实践案例
+tags: [软件开发, Vue, JavaScript]
 ---
 
 ## 安装Vue Router插件
@@ -9,8 +8,6 @@ tags:
 Vue Router3匹配Vue2
 
 Vue Router4匹配Vue3
-
-<!--more-->
 
 ```shell
 npm i vue-router@3

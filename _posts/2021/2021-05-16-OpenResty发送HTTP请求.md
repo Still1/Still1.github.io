@@ -1,12 +1,9 @@
 ---
 title: OpenResty发送HTTP请求
-tags: 
-  - 实践案例
+tags: [OpenResty, Nginx, 软件开发, Lua]
 ---
 
 ## OpenResty第三方插件lua-resty-http发送HTTP请求
-
-<!--more-->
 
 插件GitHub地址https://github.com/ledgetech/lua-resty-http
 

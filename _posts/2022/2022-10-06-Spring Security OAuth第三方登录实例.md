@@ -1,45 +1,17 @@
 ---
-title: OAuth第三方登录实例
-tags: 
-  - 实践案例
-mermaid: true
+title: Spring Security OAuth第三方登录实例
+tags: [软件开发, Java, Spring, Spring Security, OAuth, 网络安全, JavaScript, Vue, axios]
 ---
 
-## 登录时序图
+## 登录功能实现
 
-<!--more-->
+### 登录时序图
 
-```mermaid
-sequenceDiagram
-    participant Browser
-    participant Front End
-    participant Back End
-    participant GitHub
-    Browser->>Front End: /#35;/login
-    Front End->>Browser: 应用登录页面
-    Browser->>Back End: /api/oauth2/authorization/github
-    Back End->>Browser: 重定向
-    Browser->>GitHub: github.com/login/oauth/authorize?client_id=x&state=y&redirect_uri=z
-    GitHub->>Browser: GitHub登录页面
-    Browser->>GitHub: 登录请求
-    GitHub->>Browser: OAuth授权页面
-    Browser->>GitHub: 同意授权
-    GitHub->>Browser: 根据redirect_uri重定向
-    Browser->>Front End: /#35;/loginProcess?code=a&state=y
-    Front End->>Browser: 登录中页面
-    Browser->>Back End: AJAX /api/login/oauth2/code/github?code=a&state=y
-    Back End->>GitHub: POST github.com/login/oauth/access_token
-    Note right of Back End: client_id=x<br/>client_secret=xxx<br/>code=a
-    GitHub->>Back End: access_token=b
-    Back End->>GitHub: api.github.com/user
-    Note right of Back End: Authorization:<br/>Bearer b
-    GitHub->>Back End: user information
-    Back End->>Browser: cookie and user information
-```
+![](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20230221193757.png){:width="800px"}
 
+### 后端关键代码
 
-
-## 后端关键代码
+基于Spring Boot实现
 
 `pom.xml`引入Sprint Boot OAuth Client
 
@@ -106,8 +78,7 @@ public class SecurityConfiguration {
 ```
 
 
-
-## 前端关键代码
+### 前端关键代码
 
 `LoginProcessPage.vue`
 
@@ -155,3 +126,46 @@ export default {
 </style>
 ```
 
+## 记录登录用户的信息
+
+首次使用OAuth登录时，记录用户信息，相当于注册功能
+
+### 关键代码
+
+```java
+http.authorizeRequests((requests) -> requests.antMatchers("/loginProcess", "/redirect").permitAll().anyRequest().authenticated())  
+    .oauth2Login()  
+    .userInfoEndpoint().userService(userRequest -> {  
+        DefaultOAuth2UserService defaultOAuth2UserService = new DefaultOAuth2UserService();  
+        OAuth2User oAuth2User = defaultOAuth2UserService.loadUser(userRequest);  
+        checkRequiredAttribute(oAuth2User, userRequest);  
+        String userNameAttributeName = userRequest.getClientRegistration().getProviderDetails().getUserInfoEndpoint().getUserNameAttributeName();  
+        String userNameAttribute = oAuth2User.getAttributes().get(userNameAttributeName).toString();  
+        String registrationId = userRequest.getClientRegistration().getRegistrationId();  
+        if (checkFirstLogin(userNameAttribute, registrationId)) {  
+            String username;  
+            String nickname;  
+            if (OauthConstant.GITHUB_TYPE.equals(registrationId)) {  
+                String login = oAuth2User.getAttribute(OauthConstant.GITHUB_DEFAULT_USERNAME_KEY);  
+                String name = oAuth2User.getAttribute(OauthConstant.GITHUB_DEFAULT_NICKNAME_KEY);  
+                username = login;  
+                nickname = StringUtils.isNotBlank(name) ? name : login;  
+            } else {  
+                username = userNameAttribute;  
+                nickname = userNameAttribute;  
+            }  
+            int userId = userService.addUser(username, nickname);  
+            UserOauth userOauth = new UserOauth();  
+            userOauth.setUserId(userId);  
+            userOauth.setOauthUsername(userNameAttribute);  
+            userOauth.setOauthType(registrationId);  
+            userService.addUserOauth(userOauth);  
+        }  
+        return oAuth2User;  
+    })
+```
+
+## 文档参考
+
+* [授权 OAuth 应用](https://docs.github.com/cn/developers/apps/building-oauth-apps/authorizing-oauth-apps)
+* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/#github-application-config)

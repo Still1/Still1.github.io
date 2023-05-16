@@ -1,14 +1,11 @@
 ---
 title: GitLab提交代码触发Jenkins构建
-tags: 
-  - 实践案例
+tags: [Jenkins, GitLab, CI&CD, 软件开发]
 ---
 
 ## 安装Jenkins插件
 
 安装GitLab插件
-
-<!--more-->
 
 ![image-20220918102104731](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20220918102105.png)
 
@@ -33,5 +30,7 @@ tags:
 ## 项目Webhook配置
 
 ![image-20220918110706870](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20220918110709.png)
+
+非HTTPS取消启用SSL验证
 
 ![image-20220918110731205](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20220918110732.png)

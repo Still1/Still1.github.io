@@ -1,7 +1,6 @@
 ---
 title: Docker下的GitLab安装
-tags: 
-  - 实践案例
+tags: [Docker, 软件开发, GitLab]
 ---
 
 ## 配置临时环境变量
@@ -9,10 +8,6 @@ tags:
 ```shell
 export GITLAB_HOME=/srv/gitlab
 ```
-
-<!--more-->
-
-
 
 ## 启动GitLab容器
 
