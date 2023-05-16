@@ -1,12 +1,9 @@
 ---
 title: MySQL group_concat函数例子
-tags: 
-  - 实践案例
+tags: [MySQL, 数据库, SQL]
 ---
 
 ## SQL例子
-
-<!--more-->
 
 ```sql
 SELECT t_book.id, t_book.chinese_name, t_book.name,

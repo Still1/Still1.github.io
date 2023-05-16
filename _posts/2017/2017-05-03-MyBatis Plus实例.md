@@ -1,12 +1,9 @@
 ---
 title: MyBatis Plus实例
-tags: 
-  - 实践案例
+tags: [软件开发, Java, MyBatis, ORM, MyBatis Plus]
 ---
 
-## 关键代码
-
-<!--more-->
+## Maven依赖配置
 
 `pom.xml`
 
@@ -30,6 +27,8 @@ tags:
     <scope>runtime</scope>
 </dependency>
 ```
+
+## Spring Boot配置
 
 `application-dev.yml`
 
@@ -71,7 +70,7 @@ public class LanguageTrainerApplication {
 
 ```
 
-实体类
+## 实体类
 
 ```java
 package com.oliverclio.languagetrainer.entity;
@@ -90,7 +89,7 @@ public class Corpus {
 
 ```
 
-Mapper
+## Mapper
 
 ```java
 package com.oliverclio.languagetrainer.mapper;
@@ -103,4 +102,42 @@ import org.springframework.stereotype.Repository;
 public interface CorpusMapper extends BaseMapper<Corpus> {
 }
 
+```
+
+## QueryWrapper查询
+
+```java
+QueryWrapper<Corpus> queryWrapper = Wrappers.query();  
+queryWrapper.eq("parent_id", parentId).orderByAsc("sort");  
+corpusMapper.selectList(queryWrapper);
+```
+
+## LambdaQueryWrapper查询
+
+```java
+LambdaQueryWrapper<UserCorpusStat> lambdaQueryWrapper = Wrappers.lambdaQuery();  
+lambdaQueryWrapper.eq(UserCorpusStat::getUserId, userId);  
+lambdaQueryWrapper.eq(UserCorpusStat::getCorpusId, corpusId);  
+userCorpusStatMapper.selectOne(lambdaQueryWrapper);
+```
+
+## 分页查询
+
+```java
+@Bean  
+public MybatisPlusInterceptor mybatisPlusInterceptor() {  
+    MybatisPlusInterceptor mybatisPlusInterceptor = new MybatisPlusInterceptor();  
+    mybatisPlusInterceptor.addInnerInterceptor(new PaginationInnerInterceptor());  
+    return mybatisPlusInterceptor;  
+}
+```
+
+```java
+LambdaQueryWrapper<Movie> lambdaQueryWrapper = Wrappers.lambdaQuery();
+Page<Movie> page = new Page<>();
+page.setSize(100);  
+// 当前查询页数
+page.setCurrent(1);  
+Page<Movie> moviePage = movieMapper.selectPage(page, lambdaQueryWrapper);  
+List<Movie> records = moviePage.getRecords();
 ```
