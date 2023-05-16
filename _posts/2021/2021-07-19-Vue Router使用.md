@@ -13,8 +13,6 @@ Vue Router4匹配Vue3
 npm i vue-router@3
 ```
 
-
-
 ## Vue Router引入
 
 在与`main.js`文件同级的目录下增加一个`pages`文件夹用于放置路由组件
@@ -89,8 +87,6 @@ new Vue({
   </div>
 </template>
 ```
-
-
 
 ## 路由配置的组件与router-view之间的关联
 
@@ -175,8 +171,6 @@ const router =  new VueRouter({
 </template>
 ```
 
-
-
 ## 编程式路由跳转
 
 ```js
@@ -191,8 +185,6 @@ this.$router.go(1);
 this.$router.push(path);
 this.$router.replace(path);
 ```
-
-
 
 ## 参数传递
 
@@ -402,8 +394,6 @@ export default {
 </script>
 ```
 
-
-
 ## 缓存路由组件
 
 组件切换走时不销毁
@@ -425,8 +415,6 @@ export default {
 	<router-view></router-view>
 </keep-alive>
 ```
-
-
 
 ## 路由守卫
 
@@ -486,8 +474,6 @@ export default {
   }
 }
 ```
-
-
 
 ## 路由生命周期钩子
 
