@@ -1,16 +1,12 @@
 ---
-title: Java容器ArrayList源码分析
-tags: 
-  - 源码分析
+title: Java容器ArrayList源码完整注释
+tags: [Java, 源码分析, 概念原理]
 ---
 
-## JDK版本
-
 本文源码基于JDK8
+{:.info}
 
 ## ArrayList类继承关系
-
-<!--more-->
 
 ![image-20220629170718914](https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/202206291707130.png)
 
@@ -255,7 +251,7 @@ public abstract class AbstractCollection<E> implements Collection<E> {
             if (i == cap) {
                 // 当前处理的index超出数组边界，则扩容
                 int newCap = cap + (cap >> 1) + 1;
-                // 扩容后长度大于数组最大长度的处理，调用hugeCapacity方法
+                // 扩容后长度大于数组最大安全长度的处理，调用hugeCapacity方法
                 if (newCap - MAX_ARRAY_SIZE > 0)
                     newCap = hugeCapacity(cap + 1);
                 r = Arrays.copyOf(r, newCap);
@@ -978,7 +974,7 @@ public class ArrayList<E> extends AbstractList<E>
     // 初始容量
     private static final int DEFAULT_CAPACITY = 10;
 
-    // 显示指定长度为0，使用此共享空数组
+    // 显式指定长度为0，使用此共享空数组
     private static final Object[] EMPTY_ELEMENTDATA = {};
 
     // 使用默认长度，在未加入元素时，暂时使用此共享空数组
@@ -1035,7 +1031,8 @@ public class ArrayList<E> extends AbstractList<E>
     }
 
     public void ensureCapacity(int minCapacity) {
-        // 假如elementData是DEFAULTCAPACITY_EMPTY_ELEMENTDATA空数组，则minCapacity小于或等于DEFAULT_CAPACITY无需再确认
+        // 假如elementData是DEFAULTCAPACITY_EMPTY_ELEMENTDATA空数组，则至少扩容到DEFAULT_CAPACITY
+        // minCapacity小于或等于DEFAULT_CAPACITY无需预先扩容
         int minExpand = (elementData != DEFAULTCAPACITY_EMPTY_ELEMENTDATA)
             ? 0
             : DEFAULT_CAPACITY;
@@ -1065,7 +1062,7 @@ public class ArrayList<E> extends AbstractList<E>
             grow(minCapacity);
     }
 
-    // 最大数组元素长度
+    // 数组元素长度安全的最大长度
     private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
 
     // 扩充elementData
@@ -1966,4 +1963,3 @@ public class ArrayList<E> extends AbstractList<E>
     }
 }
 ```
-
