@@ -240,12 +240,14 @@ methods: {
 #### 参数接收
 
 ```html
+{% raw %}
 <template>
   <ul>
     <li>消息编号: {{$route.query.id}}</li>
     <li>消息内容: {{$route.query.content}}</li>
   </ul>
 </template>
+{% endraw %}
 ```
 
 ### params参数
@@ -253,6 +255,7 @@ methods: {
 #### 加入参数
 
 ```html
+{% raw %}
 <ul>
   <li v-for="message in messageList" :key="message.id">
     <router-link :to="`/home/message/detail/${message.id}/${message.content}`">{{message.content}}</router-link>
@@ -261,6 +264,7 @@ methods: {
     <button @click="replace(message)">replace</button>
   </li>
 </ul>
+{% endraw %}
 ```
 
 ```js
@@ -335,12 +339,14 @@ const router =  new VueRouter({
 #### 参数接收
 
 ```html
+{% raw %}
 <template>
   <ul>
     <li>消息编号: {{$route.params.id}}</li>
     <li>消息内容: {{$route.params.content}}</li>
   </ul>
 </template>
+{% endraw %}
 ```
 
 ### props接收参数
@@ -381,6 +387,7 @@ const router = new VueRouter({
 ```
 
 ```html
+{% raw %}
 <template>
   <ul>
     <li>消息编号: {{id}}</li>
@@ -394,6 +401,7 @@ export default {
   props: ['id', 'content']
 }
 </script>
+{% endraw %}
 ```
 
 ## 缓存路由组件
