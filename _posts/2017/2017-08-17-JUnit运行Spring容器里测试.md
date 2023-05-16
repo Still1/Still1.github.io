@@ -23,8 +23,8 @@ public class RootControllerTest {
 ```java
 @SpringBootTest
 class LanguageTrainerApplicationTests {
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+    }
 }
 ```

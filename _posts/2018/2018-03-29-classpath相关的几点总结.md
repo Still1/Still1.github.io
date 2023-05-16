@@ -1,12 +1,9 @@
 ---
 title: classpath相关的几点总结
-tags: 
-  - 知识总结
+tags: [Java, JVM]
 ---
 
 ## 知识总结
-
-<!--more-->
 
 1. JVM运行的classpath根据系统环境变量CLASSPATH来确定。一般来说JDK相关的基础jar（例如dt.jar/tools.jar）可以省略，JVM会找
 

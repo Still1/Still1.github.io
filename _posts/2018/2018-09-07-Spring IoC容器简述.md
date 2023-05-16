@@ -1,14 +1,11 @@
 ---
 title: Spring IoC容器简述
-tags: 
-  - 知识总结
+tags: [概念原理, Spring]
 ---
 
 ## IoC
 
 IoC，Inversion of Control，控制反转。可理解为原来要用到的bean需要自己创建，也就是说控制bean的创建过程。而引入IoC技术后，bean并不由使用者创建，创建的控制权转移到IoC容器
-
-<!--more-->
 
 ## DI
 

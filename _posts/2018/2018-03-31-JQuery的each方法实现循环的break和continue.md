@@ -1,7 +1,6 @@
 ---
 title: JQuery的each方法实现循环的break和continue
-tags: 
-  - 实践案例
+tags: [软件开发, JavaScript, jQuery]
 ---
 
 ## 实现方法
@@ -9,8 +8,6 @@ tags:
 break：使用`return false;`
 
 continue：使用`return true;`
-
-<!--more-->
 
 ## 代码例子
 
@@ -33,4 +30,3 @@ getConditionUrl: function() {
     return JSON.stringify(conditionArray);
 }
 ```
-
