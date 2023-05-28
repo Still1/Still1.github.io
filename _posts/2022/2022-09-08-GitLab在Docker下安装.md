@@ -1,5 +1,5 @@
 ---
-title: Docker下的GitLab安装
+title: GitLab在Docker下安装
 tags: [Docker, 软件开发, GitLab]
 ---
 
