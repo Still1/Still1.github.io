@@ -1,6 +1,6 @@
 ---
 title: Mockito静态方法mock
-tags: [软件测试, Java, Mockiot, 单元测试]
+tags: [软件测试, Java, Mockito, 单元测试]
 ---
 
 ## 依赖配置
