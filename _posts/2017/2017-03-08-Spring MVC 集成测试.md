@@ -97,7 +97,7 @@ resultActions.andExpect(MockMvcResultMatchers.jsonPath("$.data.learningCount").v
 
 使用注解`@WithUserDetails`，通过`UserDetailsService`查询对应用户名的用户信息
 
-> [[Spring Security同时支持用户名密码登录和OAuth登录#自定义用户信息服务|自定义UserDetailsService]]
+> [自定义UserDetailsService](https://blog.oliverclio.com/2023/02/09/Spring-Security%E5%90%8C%E6%97%B6%E6%94%AF%E6%8C%81%E7%94%A8%E6%88%B7%E5%90%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E5%92%8COAuth%E7%99%BB%E5%BD%95.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1)
 
 ```java
 private static final String DEFAULT_TEST_USER = "Still1";
