@@ -82,7 +82,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 
 继承`AbstractAnnotationConfigDispatcherServletInitializer`是最方便的配置做法，默认配置两个`WebApplicationContext`，这两个上下文的配置Java类通过`getRootConfigClasses`和`getServletConfigClasses`来指定。获取bean时优先从servlet上下文获取，假如找不到bean，则再去root上下文中获取。一般web项目可以只使用servlet上下文
 
-> [[Java Web项目架构#MVC]]
+> [Java Web项目架构#MVC](https://blog.oliverclio.com/2015/03/10/Java-Web%E9%A1%B9%E7%9B%AE%E6%9E%B6%E6%9E%84.html#mvc)
 
 <img src="https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20230225113647.png" width="600px" />
 
