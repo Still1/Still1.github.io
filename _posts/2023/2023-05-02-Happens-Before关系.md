@@ -59,4 +59,4 @@ Java规范中happens-before规则包括
 * [https://preshing.com/20130702/the-happens-before-relation/](https://preshing.com/20130702/the-happens-before-relation/)
 * [https://preshing.com/20130823/the-synchronizes-with-relation/](https://preshing.com/20130823/the-synchronizes-with-relation/)
 * Brain Goetz等，Java并发编程实战(Java Concurrency in Practice)，机械工业出版社，2012：280
-* https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4.5
+* [https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4.5](https://docs.oracle.com/javase/specs/jls/se8/html/jls-17.html#jls-17.4.5)
