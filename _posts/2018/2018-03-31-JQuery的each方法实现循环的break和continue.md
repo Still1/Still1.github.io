@@ -1,5 +1,5 @@
 ---
-title: JQuery的each方法实现循环的break和continue
+title: jQuery的each方法实现循环的break和continue
 tags: [软件开发, JavaScript, jQuery]
 ---
 
