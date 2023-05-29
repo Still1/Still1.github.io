@@ -33,9 +33,12 @@ docker run -p 8848:8848 -p 9848:9848 --name nacos \
 -d nacos/nacos-server:v2.2.0
 ```
 
-> [! warning]
-> NACOS_AUTH_ENABLE=true 开启权限验证
-> NACOS_AUTH_TOKEN 自定义密钥
+NACOS_AUTH_ENABLE=true 开启权限验证
+{:.warning}
+
+NACOS_AUTH_TOKEN 自定义密钥
+{:.warning}
+
 
 ## 单机模式启动
 
