@@ -13,21 +13,21 @@ tags: [概念原理, Java, Spring, Spring Security, 网络安全]
 
 例如，当没有对Spring Security作任何的配置时，默认的一个`SecurityFilterChain`按顺序绑定了以下filter
 
-`WebAsyncManagerIntegrationFilter`
-`SecurityContextPersistenceFilter`
-`HeaderWriterFilter`
-`CsrfFilter`
-`LogoutFilter`
-`UsernamePasswordAuthenticationFilter`
-`DefaultLoginPageGeneratingFilter`
-`DefaultLogoutPageGeneratingFilter`
-`BasicAuthenticationFilter`
-`RequestCacheAwareFilter`
-`SecurityContextHolderAwareRequestFilter`
-`AnonymousAuthenticationFilter`
-`SessionManagementFilter`
-`ExceptionTranslationFilter`
-`FilterSecurityInterceptor`
+* `WebAsyncManagerIntegrationFilter`
+* `SecurityContextPersistenceFilter`
+* `HeaderWriterFilter`
+* `CsrfFilter`
+* `LogoutFilter`
+* `UsernamePasswordAuthenticationFilter`
+* `DefaultLoginPageGeneratingFilter`
+* `DefaultLogoutPageGeneratingFilter`
+* `BasicAuthenticationFilter`
+* `RequestCacheAwareFilter`
+* `SecurityContextHolderAwareRequestFilter`
+* `AnonymousAuthenticationFilter`
+* `SessionManagementFilter`
+* `ExceptionTranslationFilter`
+* `FilterSecurityInterceptor
 
 当配置对所有请求放行时，`SecurityFilterChain`按顺序绑定了以下filter
 
@@ -39,17 +39,17 @@ public SecurityFilterChain formFilterChain(HttpSecurity http) throws Exception {
 }
 ```
 
-`WebAsyncManagerIntegrationFilter`
-`SecurityContextPersistenceFilter`
-`HeaderWriterFilter`
-`CsrfFilter`
-`LogoutFilter`
-`RequestCacheAwareFilter`
-`SecurityContextHolderAwareRequestFilter`
-`AnonymousAuthenticationFilter`
-`SessionManagementFilter`
-`ExceptionTranslationFilter`
-`FilterSecurityInterceptor`
+* `WebAsyncManagerIntegrationFilter`
+* `SecurityContextPersistenceFilter`
+* `HeaderWriterFilter`
+* `CsrfFilter`
+* `LogoutFilter`
+* `RequestCacheAwareFilter`
+* `SecurityContextHolderAwareRequestFilter`
+* `AnonymousAuthenticationFilter`
+* `SessionManagementFilter`
+* `ExceptionTranslationFilter`
+* `FilterSecurityInterceptor`
 
 可以通过注册多个`SecurityFilterChain`的bean，并指定不同的匹配条件（如URL的匹配规则）和优先匹配顺序，以达到在不同的情况下使用不同的安全规则，详情可参考[Spring Security同时支持用户名密码登录和OAuth登录#认证配置](https://blog.oliverclio.com/2023/02/09/Spring-Security%E5%90%8C%E6%97%B6%E6%94%AF%E6%8C%81%E7%94%A8%E6%88%B7%E5%90%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E5%92%8COAuth%E7%99%BB%E5%BD%95.html#%E8%AE%A4%E8%AF%81%E9%85%8D%E7%BD%AE)
 
