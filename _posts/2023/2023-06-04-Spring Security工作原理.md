@@ -79,7 +79,7 @@ public SecurityFilterChain formFilterChain(HttpSecurity http) throws Exception {
 ### ProviderManager身份认证的过程
 
 通过配置可向特定的`ProviderManager`注册多个`AuthenticationProvider`，不同的`AuthenticationProvider`负责特定形式的身份认证，如根据用户名密码认证、根据JWT进行认证等。`ProviderManager`根据注册的顺序依次调用各个`AuthenticationProvider`，直到身份认证成功。假如调用完所有的`AuthenticationProvider`都无法认证成功，则会将身份认证工作委托给父`AuthenticationManager`（通常也是一个`ProviderManager`）
-``
+
 <img src="https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20230604235213.png" width="700px" />
 
 <img src="https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20230604235251.png" width="300px" />
