@@ -27,7 +27,7 @@ tags: [概念原理, Java, Spring, Spring Security, 网络安全]
 * `AnonymousAuthenticationFilter`
 * `SessionManagementFilter`
 * `ExceptionTranslationFilter`
-* `FilterSecurityInterceptor
+* `FilterSecurityInterceptor`
 
 当配置对所有请求放行时，`SecurityFilterChain`按顺序绑定了以下filter
 
