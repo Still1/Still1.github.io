@@ -20,13 +20,17 @@ tags: [软件开发, Spring, Spring Cloud, Java, 分布式系统]
 如需要，获取Spring Cloud Alibaba版本配置
 
 ```xml
-<dependency>  
-    <groupId>com.alibaba.cloud</groupId>  
-    <artifactId>spring-cloud-alibaba-dependencies</artifactId>  
-    <version>2021.0.5.0</version>  
-    <type>pom</type>  
-    <scope>import</scope>  
-</dependency>
+<dependencyManagement>
+    <dependencies>
+        <dependency>  
+            <groupId>com.alibaba.cloud</groupId>  
+            <artifactId>spring-cloud-alibaba-dependencies</artifactId>  
+            <version>2021.0.5.0</version>  
+            <type>pom</type>  
+            <scope>import</scope>  
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 ```
 
 ## 核心起步依赖
