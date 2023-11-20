@@ -104,6 +104,13 @@ public void updateMovie(Movie movie) {
 }
 ```
 
+```java
+@Caching(evict = {
+    @CacheEvict(cacheNames = "organizationRangeIdSet", allEntries = true),
+    @CacheEvict(cacheNames = "organization", key = "#entity.id")
+})
+```
+
 ## 参考文档
 
 * [https://docs.spring.io/spring-boot/docs/2.6.14/reference/html/data.html#data.nosql.redis](https://docs.spring.io/spring-boot/docs/2.6.14/reference/html/data.html#data.nosql.redis)

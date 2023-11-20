@@ -17,6 +17,29 @@ tags: [Java, 软件开发, Spring Security, 网络安全, Spring, JWT, 分布式
 </dependency>
 ```
 
+0.9.1版本之后，对jjwt的引入如下
+
+```xml
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt-api</artifactId>
+    <version>0.11.2</version>
+</dependency>
+
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt-impl</artifactId>
+    <version>0.11.2</version>
+    <scope>runtime</scope>
+</dependency>
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt-jackson</artifactId>
+    <version>0.11.2</version>
+    <scope>runtime</scope>
+</dependency>
+```
+
 ## JWT工具类
 
 实现token的生成和解析
@@ -88,6 +111,19 @@ public class SecurityConfiguration {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {  
         return authenticationConfiguration.getAuthenticationManager();  
     }  
+}
+```
+
+上面对全局`AuthenticationManager`的获取可能受到Spring Security的版本影响，若获取失败，可使用下面的方法替代
+{:.warning}
+
+```java
+@Bean
+public AuthenticationManager authenticationManager(UserDetailsService userDetailsService, PasswordEncoder passwordEncoder) {
+    DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
+    daoAuthenticationProvider.setUserDetailsService(userDetailsService);
+    daoAuthenticationProvider.setPasswordEncoder(passwordEncoder);
+    return new ProviderManager(daoAuthenticationProvider);
 }
 ```
 
