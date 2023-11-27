@@ -1,5 +1,5 @@
 ---
-title: MyBatis Plus实例
+title: MyBatis-Plus实例
 tags: [软件开发, Java, MyBatis, ORM, MyBatis Plus]
 ---
 
