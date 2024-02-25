@@ -111,6 +111,11 @@ public void updateMovie(Movie movie) {
 })
 ```
 
+## 缓存注解使用注意
+
+* 缓存注解，如`@Cacheable`,`@CacheEvict`等，实现原理为动态代理，因此具有与声明式事务`@Transactional`类似的失效情况（如类内部调用失效等）
+* `@CacheEvict`必须用在返回值为`void`的方法上
+
 ## 参考文档
 
 * [https://docs.spring.io/spring-boot/docs/2.6.14/reference/html/data.html#data.nosql.redis](https://docs.spring.io/spring-boot/docs/2.6.14/reference/html/data.html#data.nosql.redis)
