@@ -47,6 +47,8 @@ mybatis-plus:
   global-config:
     db-config:
       table-prefix: t_
+  # 可自定义mapper配置的位置，下面为默认值
+  mapper-locations: classpath*:/mapper/**/*.xml
 ```
 
 Spring Boot启动类
@@ -124,11 +126,16 @@ userCorpusStatMapper.selectOne(lambdaQueryWrapper);
 ## 分页查询
 
 ```java
-@Bean  
-public MybatisPlusInterceptor mybatisPlusInterceptor() {  
-    MybatisPlusInterceptor mybatisPlusInterceptor = new MybatisPlusInterceptor();  
-    mybatisPlusInterceptor.addInnerInterceptor(new PaginationInnerInterceptor());  
-    return mybatisPlusInterceptor;  
+@Bean
+public MybatisPlusInterceptor mybatisPlusInterceptor() {
+    MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+    interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.H2));
+    return interceptor;
+}
+
+@Bean
+public ConfigurationCustomizer configurationCustomizer() {
+    return configuration -> configuration.setUseDeprecatedExecutor(false);
 }
 ```
 
@@ -141,3 +148,8 @@ page.setCurrent(1);
 Page<Movie> moviePage = movieMapper.selectPage(page, lambdaQueryWrapper);  
 List<Movie> records = moviePage.getRecords();
 ```
+
+## Mapper配置文件位置
+
+mapper配置文件默认可放置在对应Mapper类的同一目录下，或放置在`classpath*:/mapper/**/*.xml`下。mapper配置文件位置可通过`mapper-locations`属性指定，默认为`classpath*:/mapper/**/*.xml`。
+
