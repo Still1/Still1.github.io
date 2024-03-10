@@ -41,6 +41,7 @@ public class ApplicationContextHolder implements ApplicationRunner {
 ### ApplicationContextAware设置
 
 ```java
+@Component
 public class ApplicationContextHolder implements ApplicationContextAware {
     private static ApplicationContext applicationContext;
 
@@ -66,3 +67,8 @@ public class ApplicationContextHolder implements ApplicationContextAware {
 ```java
 private static volatile ApplicationContext applicationContext;
 ```
+
+### bean创建次序问题
+
+当需要保证`ApplicationContextHolder`优先被创建时，需要使用如`@Order(value = Integer.MIN_VALUE)`的方式保证优先级，数字越小优先级越高。
+
