@@ -142,6 +142,13 @@ spring:
 
 消费队列消息，将数据同步到Elasticsearch
 
+```xml
+<dependency>  
+   <groupId>co.elastic.clients</groupId>  
+   <artifactId>elasticsearch-java</artifactId>  
+</dependency>
+```
+
 ```java
 @Component  
 public class CanalMessageConsumer {  
