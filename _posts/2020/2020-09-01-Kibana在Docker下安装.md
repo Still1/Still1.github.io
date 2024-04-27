@@ -41,3 +41,14 @@ docker run -p 5601:5601 --name kibana \
 -v /opt/volume/kibana/config:/usr/share/kibana/config \
 -d kibana:7.17.9
 ```
+
+## Elasticsearch配置
+
+`config/kibana.yml`
+
+```yaml
+server.port: 5601
+elasticsearch.hosts： ["http://localhost:9200"]
+kibana.index: ".kibana"
+i18n.locale: "zh-CN"
+```
