@@ -1,6 +1,6 @@
 ---
 title: Vue Router使用
-tags: [软件开发, Vue, JavaScript]
+tags: [Vue Router]
 ---
 
 ## 安装Vue Router插件

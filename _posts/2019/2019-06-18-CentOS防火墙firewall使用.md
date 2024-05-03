@@ -1,6 +1,6 @@
 ---
 title: CentOS防火墙firewall使用
-tags: [Linux, CentOS, 网络安全, 防火墙, firewall]
+tags: [CentOS]
 ---
 
 ## CentOS防火墙结构

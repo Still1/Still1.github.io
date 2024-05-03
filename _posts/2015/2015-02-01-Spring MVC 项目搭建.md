@@ -1,6 +1,6 @@
 ---
 title: Spring MVC 项目搭建
-tags: [Java, Spring, Spring MVC, 软件开发]
+tags: [Spring MVC]
 ---
 
 ## 环境配置

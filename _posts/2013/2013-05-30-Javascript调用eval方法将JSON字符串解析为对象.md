@@ -1,6 +1,6 @@
 ---
 title: JavaScript调用eval方法将JSON字符串解析为对象
-tags: [软件开发, JavaScript]
+tags: [JSON, JavaScript]
 ---
 
 ```javascript

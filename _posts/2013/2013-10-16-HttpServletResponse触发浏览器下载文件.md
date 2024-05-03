@@ -1,6 +1,6 @@
 ---
 title: HttpServletResponse触发浏览器下载文件
-tags: [软件开发, Java, Servlet]
+tags: [Servlet, Java]
 ---
 
 ## Java代码例子

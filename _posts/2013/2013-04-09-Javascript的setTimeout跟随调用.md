@@ -1,6 +1,6 @@
 ---
 title: JavaScript的setTimeout跟随调用
-tags: [软件开发, JavaScript]
+tags: [JavaScript]
 ---
 
 在JavaScript中，如需要在一个函数调用结束后调用另外一个函数，可以使用

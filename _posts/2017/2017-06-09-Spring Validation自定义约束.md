@@ -1,6 +1,6 @@
 ---
 title: Spring Validation自定义约束
-tags: [软件开发, Java, Spring, Spring Validation]
+tags: [Spring Validation]
 ---
 
 ## 完整实践案例

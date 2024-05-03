@@ -1,6 +1,6 @@
 ---
 title: JavaScript实现面向对象
-tags: [软件开发, JavaScript]
+tags: [JavaScript]
 ---
 
 ## 构造方法加原型对象实现

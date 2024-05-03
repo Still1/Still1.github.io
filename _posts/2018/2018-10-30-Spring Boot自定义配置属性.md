@@ -1,6 +1,6 @@
 ---
 title: Spring Boot自定义配置属性
-tags: [软件开发, Spring, Spring Boot, Java]
+tags: [Spring Boot]
 ---
 
 ## 代码实例

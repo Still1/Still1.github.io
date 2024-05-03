@@ -1,6 +1,6 @@
 ---
 title: ConcurrentHashMap实现id范围锁
-tags: [软件开发, Java, 多线程]
+tags: [Java]
 ---
 
 ## 单次获取

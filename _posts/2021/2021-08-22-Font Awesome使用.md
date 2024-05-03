@@ -1,6 +1,6 @@
 ---
 title: Font Awesome使用
-tags: [软件开发, Vue]
+tags: [Font Awesome]
 ---
 
 ## 安装Font Awesome

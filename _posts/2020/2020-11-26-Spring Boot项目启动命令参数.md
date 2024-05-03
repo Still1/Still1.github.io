@@ -1,6 +1,6 @@
 ---
 title: Spring Boot项目启动命令参数
-tags: [软件开发, 系统运维, Java, Spring, Spring Boot]
+tags: [Spring Boot]
 ---
 
 ## 启动命令

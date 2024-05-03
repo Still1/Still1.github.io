@@ -1,6 +1,6 @@
 ---
 title: OpenResty运行Lua脚本
-tags: [软件开发, OpenResty, Nginx, Lua]
+tags: [OpenResty]
 ---
 
 ## 代码例子

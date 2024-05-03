@@ -1,6 +1,6 @@
 ---
 title: Spring Security同时支持用户名密码登录和OAuth登录
-tags: [软件开发, Java, Spring, Spring Security, 网络安全, OAuth]
+tags: [Spring Security]
 ---
 
 ## 前置

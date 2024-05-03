@@ -1,6 +1,6 @@
 ---
 title: RabbitMQ在Docker下安装
-tags: [Docker, RabbitMQ, 系统运维, 软件开发]
+tags: [RabbitMQ]
 ---
 
 ## RabbitMQ安装

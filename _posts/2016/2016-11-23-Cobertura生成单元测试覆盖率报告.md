@@ -1,6 +1,6 @@
 ---
 title: Cobertura生成单元测试覆盖率报告
-tags: [软件测试, 单元测试, Java, Maven, Cobertura]
+tags: [Cobertura]
 ---
 
 ## 配置Maven插件

@@ -1,6 +1,6 @@
 ---
 title: Spring MVC 集成测试
-tags: [软件测试, 集成测试, Java, Spring, Spring MVC]
+tags: [Spring MVC]
 ---
 
 ## 独立测试profile

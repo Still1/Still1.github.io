@@ -1,6 +1,6 @@
 ---
 title: Spring BeanWrapper操作对象属性
-tags: [Java, Spring, 软件开发]
+tags: [Spring]
 ---
 
 ## 代码实例

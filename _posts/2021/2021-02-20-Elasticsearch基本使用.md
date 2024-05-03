@@ -1,14 +1,14 @@
 ---
 title: Elasticsearch基本使用
-tags: [软件开发, Elasticsearch]
+tags: [Elasticsearch]
 ---
 
 ## Elasticsearch与关系型数据库概念类比
 
 * Index -> Database
 * Type -> Table (7以上版本概念删除)
-* Documents -> Row
-* Fields -> Column
+* Document -> Row
+* Field -> Column
 
 ## Elasticsearch基础操作
 

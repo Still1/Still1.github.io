@@ -1,6 +1,6 @@
 ---
 title: Spring Security用户名密码登录MVC测试
-tags: [软件测试, 集成测试, Java, Spring, Spring Security, Spring MVC]
+tags: [Spring Security, Spring MVC]
 ---
 
 ## 添加依赖

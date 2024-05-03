@@ -1,6 +1,6 @@
 ---
 title: Spring整合MyBatis
-tags: [软件开发, Java, MyBatis, Spring]
+tags: [MyBatis]
 ---
 
 ## maven依赖

@@ -1,6 +1,6 @@
 ---
 title: OpenResty访问Redis
-tags: [软件开发, OpenResty, Nginx, Redis]
+tags: [OpenResty]
 ---
 
 ## OpenResty内置redis2-nginx-module访问Redis

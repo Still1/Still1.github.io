@@ -1,6 +1,6 @@
 ---
 title: DockerFile指南
-tags: [Docker, 系统运维]
+tags: [Docker]
 ---
 
 ## 关键字

@@ -1,6 +1,6 @@
 ---
 title: MySQL group_concat函数例子
-tags: [MySQL, 数据库, SQL]
+tags: [MySQL, SQL]
 ---
 
 ## SQL例子

@@ -1,6 +1,6 @@
 ---
 title: CSS修改placeholder样式
-tags: [CSS, 软件开发]
+tags: [CSS]
 ---
 
 ## 一般方法

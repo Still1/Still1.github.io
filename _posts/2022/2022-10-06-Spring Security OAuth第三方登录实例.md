@@ -1,6 +1,6 @@
 ---
 title: Spring Security OAuth第三方登录实例
-tags: [软件开发, Java, Spring, Spring Security, OAuth, 网络安全, JavaScript, Vue, axios]
+tags: [Spring Security]
 ---
 
 本文例子基于前后端分离项目

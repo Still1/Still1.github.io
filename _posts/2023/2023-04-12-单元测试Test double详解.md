@@ -1,6 +1,6 @@
 ---
 title: 单元测试Test double详解
-tags: [软件测试, 单元测试, 概念原理]
+tags: [单元测试, 概念原理]
 ---
 
 ## Test double

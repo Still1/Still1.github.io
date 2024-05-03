@@ -1,6 +1,6 @@
 ---
 title: SQL中delete和truncate
-tags: [SQL, 数据库]
+tags: [SQL]
 ---
 
 ## 作用

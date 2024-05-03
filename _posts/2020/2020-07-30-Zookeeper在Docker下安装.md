@@ -1,6 +1,6 @@
 ---
 title: Zookeeper在Docker下安装
-tags: [Docker, Zookeeper, 系统运维, 软件开发]
+tags: [Zookeeper]
 ---
 
 ## Zookeeper安装

@@ -1,6 +1,6 @@
 ---
 title: JavaScript获得当前时间的年月日
-tags: [JavaScript, 软件开发]
+tags: [JavaScript]
 ---
 
 ## 获得当前时间的年

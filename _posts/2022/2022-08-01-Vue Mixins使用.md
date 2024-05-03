@@ -1,6 +1,6 @@
 ---
 title: Vue Mixins使用
-tags: [软件开发, JavaScript, Vue]
+tags: [Vue]
 ---
 
 ## 被引用的Mixins

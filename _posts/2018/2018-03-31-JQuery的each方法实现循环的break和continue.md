@@ -1,6 +1,6 @@
 ---
 title: jQuery的each方法实现循环的break和continue
-tags: [软件开发, JavaScript, jQuery]
+tags: [jQuery]
 ---
 
 ## 实现方法

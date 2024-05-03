@@ -1,6 +1,6 @@
 ---
 title: Element UI使用
-tags: [软件开发, JavaScript, Vue, Element UI]
+tags: [Element UI]
 ---
 
 ## Element UI安装

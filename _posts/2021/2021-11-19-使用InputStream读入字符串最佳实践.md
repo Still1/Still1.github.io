@@ -1,6 +1,6 @@
 ---
 title: 使用InputStream读入字符串最佳实践
-tags: [软件开发, Java]
+tags: [Java]
 ---
 
 ## 字节流，效率最高

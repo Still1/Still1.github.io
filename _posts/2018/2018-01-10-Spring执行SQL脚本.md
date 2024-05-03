@@ -1,6 +1,6 @@
 ---
 title: Spring执行SQL脚本
-tags: [软件测试, Java, Spring]
+tags: [Spring]
 ---
 
 ## 执行SQL脚本

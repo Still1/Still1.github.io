@@ -1,6 +1,6 @@
 ---
 title: Vue Router测试
-tags: [软件测试, JavaScript, Vue, Jest, Vue Test Utils, 组件测试]
+tags: [Vue Router]
 ---
 
 ## 测试代码

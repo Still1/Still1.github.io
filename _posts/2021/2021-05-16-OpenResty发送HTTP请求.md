@@ -1,6 +1,6 @@
 ---
 title: OpenResty发送HTTP请求
-tags: [OpenResty, Nginx, 软件开发, Lua]
+tags: [OpenResty]
 ---
 
 ## OpenResty第三方插件lua-resty-http发送HTTP请求

@@ -1,6 +1,6 @@
 ---
 title: JUnit运行Spring容器内测试
-tags: [软件测试, 集成测试, JUnit, Spring, Spring Boot]
+tags: [JUnit]
 ---
 
 ## 代码例子

@@ -1,6 +1,6 @@
 ---
 title: Spring Boot条件化注册bean
-tags: [Java, Spring, Spring Boot, 软件开发]
+tags: [Spring Boot]
 ---
 
 ## 项目配置属性的值作为条件

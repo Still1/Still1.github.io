@@ -1,6 +1,6 @@
 ---
 title: Spring Boot编程式事务
-tags: [软件开发, Java, Spring, Spring Boot, 数据库]
+tags: [Spring Boot]
 ---
 
 ## 无需处理返回值

@@ -1,6 +1,6 @@
 ---
 title: Nacos在Docker下安装
-tags: [Docker, Nacos, 系统运维, 软件开发]
+tags: [Nacos]
 ---
 
 ## 准备数据库

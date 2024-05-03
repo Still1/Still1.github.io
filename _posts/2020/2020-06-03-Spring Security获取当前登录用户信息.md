@@ -1,6 +1,6 @@
 ---
 title: Spring Security获取当前登录用户信息
-tags: [软件开发, Java, Spring, Spring Security]
+tags: [Spring Security]
 ---
 
 ## 代码实例

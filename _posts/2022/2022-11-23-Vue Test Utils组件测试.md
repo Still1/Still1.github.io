@@ -1,6 +1,6 @@
 ---
 title: Vue Test Utils组件测试
-tags: [软件测试, 组件测试, JavaScript, Vue, Vue Test Utils, Jest]
+tags: [Vue Test Utils]
 ---
 
 ## 环境准备

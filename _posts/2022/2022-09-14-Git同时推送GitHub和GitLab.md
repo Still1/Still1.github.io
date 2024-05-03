@@ -1,6 +1,6 @@
 ---
 title: Git同时推送GitHub和GitLab
-tags: [软件开发, Git, GitHub, GitLab]
+tags: [Git]
 ---
 
 ## 实现方式

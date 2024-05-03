@@ -1,6 +1,6 @@
 ---
 title: GitLab提交代码触发Jenkins构建
-tags: [Jenkins, GitLab, CI&CD, 软件开发]
+tags: [Jenkins, GitLab]
 ---
 
 ## 安装Jenkins插件

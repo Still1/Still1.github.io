@@ -1,6 +1,6 @@
 ---
 title: Spring Boot使用fastjson2作为默认解析器
-tags: [软件开发, Java, Spring, Spring Boot, fastjson]
+tags: [Spring Boot, fastjson]
 ---
 
 ## Maven依赖配置
