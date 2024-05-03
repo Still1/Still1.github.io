@@ -1,6 +1,6 @@
 ---
 title: 问题解决（JavaScript）
-tags: [JavaScript, 软件开发]
+tags: [JavaScript, 问题解决]
 ---
 
 ## form提交的某个属性的值，后面多了一个逗号

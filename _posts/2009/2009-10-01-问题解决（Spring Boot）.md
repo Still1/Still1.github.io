@@ -1,6 +1,6 @@
 ---
 title: 问题解决（Spring Boot）
-tags: [软件开发, Java, Spring, Spring Boot]
+tags: [Spring Boot, 问题解决]
 ---
 
 ## Spring Boot项目启动报错 Error creating bean with name 'configurationPropertiesBeans'

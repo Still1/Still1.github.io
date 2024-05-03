@@ -1,6 +1,6 @@
 ---
 title: 问题解决（Spring MVC）
-tags: [Java, 软件开发, Spring MVC, Spring]
+tags: [Spring MVC, 问题解决]
 ---
 
 ## 报错 javax.servlet.ServletException: Could not resolve view with name 'xxx' in servlet with name 'spring'

@@ -1,6 +1,6 @@
 ---
 title: 问题解决（IntelliJ IDEA）
-tags: [软件开发, Java]
+tags: [IntelliJ IDEA, 问题解决]
 ---
 
 ## IntelliJ IDEA 解决public方法检查是否使用过的问题

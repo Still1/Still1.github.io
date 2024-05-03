@@ -1,6 +1,6 @@
 ---
 title: 问题解决（Hibernate）
-tags: [Java, Hibernate, 软件开发]
+tags: [Hibernate, 问题解决]
 ---
 
 ## Hibernate数据无法save，且后台无报错
