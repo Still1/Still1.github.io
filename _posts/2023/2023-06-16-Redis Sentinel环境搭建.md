@@ -54,7 +54,7 @@ sentinel announce-ip "192.168.88.153"
 # 对外访问的端口号
 sentinel announce-port 26379
 
-# redis主机地址配置，以及达到客观下线的票数
+# redis主机地址配置，以及达到客观下线的票数要求
 sentinel monitor mymaster 192.168.88.151 6379 2
 
 # redis主机和从机的认证密码
@@ -68,6 +68,8 @@ sentinel parallel-syncs mymaster 1
 ```
 
 ### 启动sentinel
+
+sentinel也需要满足高可用的需求，最好部署3台或以上，且与redis服务器分离
 
 ```shell
 mkdir -p /opt/volume/sentinel/conf
