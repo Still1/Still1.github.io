@@ -1,6 +1,6 @@
 ---
 title: Spring Validation自定义约束
-tags: [Spring Validation]
+tags: [Spring]
 ---
 
 ## 完整实践案例

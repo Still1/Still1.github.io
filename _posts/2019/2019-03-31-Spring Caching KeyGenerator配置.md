@@ -1,6 +1,6 @@
 ---
 title: Spring Caching KeyGenerator配置
-tags: [Spring Data, Spring Integration]
+tags: [Spring Data]
 ---
 
 ## 代码实例

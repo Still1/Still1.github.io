@@ -1,6 +1,6 @@
 ---
 title: Spring声明式缓存动态cacheNames
-tags: [Spring Data, Spring Integration]
+tags: [Spring Data]
 ---
 
 ## 代码实例

@@ -1,6 +1,6 @@
 ---
 title: Spring声明式缓存整合Redis
-tags: [Redis, Spring Data, Spring Integration]
+tags: [Redis, Spring Data]
 ---
 
 ## 安装Redis
