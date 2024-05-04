@@ -1,6 +1,6 @@
 ---
 title: Java获取应用的所有Class对象
-tags: [软件开发, Java]
+tags: [Java]
 ---
 
 ## 代码实例

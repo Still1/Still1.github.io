@@ -1,6 +1,6 @@
 ---
 title: Jenkins流水线Jenkinsfile编写
-tags: [软件开发, 系统运维, Java, Jenkins]
+tags: [Jenkins]
 ---
 
 ## 前言

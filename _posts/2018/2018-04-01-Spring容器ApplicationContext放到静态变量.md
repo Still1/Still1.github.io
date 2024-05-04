@@ -1,6 +1,6 @@
 ---
 title: Spring容器ApplicationContext放到静态变量
-tags: [Spring, Java, 软件开发, Spring Boot]
+tags: [Spring, Spring Boot]
 ---
 
 ## 设置方式

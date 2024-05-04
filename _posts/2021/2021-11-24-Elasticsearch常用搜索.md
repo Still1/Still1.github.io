@@ -1,6 +1,6 @@
 ---
 title: Elasticsearch常用搜索
-tags: [Elasticsearch, 软件开发]
+tags: [Elasticsearch]
 ---
 
 ## 查询

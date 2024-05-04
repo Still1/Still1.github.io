@@ -1,6 +1,6 @@
 ---
 title: HAProxy在Docker下安装
-tags: [系统运维, HAProxy, 集群系统, Docker]
+tags: [HAProxy]
 ---
 
 ## 准备配置文件

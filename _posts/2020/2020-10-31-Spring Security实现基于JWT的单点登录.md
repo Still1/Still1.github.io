@@ -1,6 +1,6 @@
 ---
 title: Spring Security实现基于JWT的单点登录
-tags: [Java, 软件开发, Spring Security, 网络安全, Spring, JWT, 分布式系统]
+tags: [Spring Security]
 ---
 
 ## Maven依赖

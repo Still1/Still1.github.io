@@ -1,6 +1,6 @@
 ---
 title: Elasticsearch客户端Java High Level REST Client使用
-tags: [软件开发, Elasticsearch, Java]
+tags: [Elasticsearch]
 ---
 
 ## 前言

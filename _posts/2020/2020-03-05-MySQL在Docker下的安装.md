@@ -1,6 +1,6 @@
 ---
 title: MySQL在Docker下的安装
-tags: [Docker, MySQL, 系统运维, 软件开发]
+tags: [MySQL]
 ---
 
 ## 下载MySQL镜像

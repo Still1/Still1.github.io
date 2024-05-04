@@ -1,6 +1,6 @@
 ---
 title: Redis Sentinel环境搭建
-tags: [Redis, 集群系统, 系统运维, 软件开发]
+tags: [Redis]
 ---
 
 ## 前言

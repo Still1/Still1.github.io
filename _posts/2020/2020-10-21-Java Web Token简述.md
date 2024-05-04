@@ -1,6 +1,6 @@
 ---
 title: Java Web Token简述
-tags: [Java, 网络安全, 概念原理]
+tags: [网络安全, 概念原理]
 ---
 
 ## Java Web Token信息组成

@@ -1,6 +1,6 @@
 ---
 title: 基于MyBatis-Plus实现自定义通用数据库服务
-tags: [软件开发, Java, MyBatis-Plus]
+tags: [MyBatis-Plus, 系统设计]
 ---
 
 ## 实体

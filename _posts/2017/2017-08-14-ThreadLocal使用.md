@@ -1,6 +1,6 @@
 ---
 title: ThreadLocal使用
-tags: [Java, 多线程]
+tags: [Java]
 ---
 
 ## 带初始值

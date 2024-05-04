@@ -1,6 +1,6 @@
 ---
 title: Kibana在Docker下安装
-tags: [Docker, Elasticsearch, 系统运维, 软件开发, Kibana]
+tags: [Kibana]
 ---
 
 ## 下载Kibana镜像

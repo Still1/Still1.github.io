@@ -1,6 +1,6 @@
 ---
 title: Java8 CompletableFuture使用
-tags: [Java, 多线程]
+tags: [Java]
 ---
 
 ## 准备Executor

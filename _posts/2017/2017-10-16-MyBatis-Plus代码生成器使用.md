@@ -1,6 +1,6 @@
 ---
 title: MyBatis-Plus代码生成器使用
-tags: [软件开发, Java, MyBatis-Plus]
+tags: [MyBatis-Plus]
 ---
 
 ## Maven依赖

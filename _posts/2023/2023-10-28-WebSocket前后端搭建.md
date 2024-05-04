@@ -1,6 +1,6 @@
 ---
 title: WebSocket前后端搭建
-tags: [软件开发, Java, JavaScript]
+tags: [WebSocket]
 ---
 
 ## 服务端

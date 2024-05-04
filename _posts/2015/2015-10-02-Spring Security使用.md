@@ -1,6 +1,6 @@
 ---
 title: Spring Security使用
-tags: [Java, Spring, Spring Security, 网络安全, 软件开发]
+tags: [Spring Security]
 ---
 
 本文例子基于前后端不分离项目

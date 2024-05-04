@@ -1,6 +1,6 @@
 ---
 title: Java容器ConcurrentHashMap源码分析
-tags: [Java, 源码分析, 概念原理, 多线程]
+tags: [Java, 源码分析, 概念原理]
 mathjax: true
 ---
 

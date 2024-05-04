@@ -1,6 +1,6 @@
 ---
 title: Spring Cloud项目起步配置
-tags: [软件开发, Spring, Spring Cloud, Java, 分布式系统]
+tags: [Spring Cloud]
 ---
 
 ## 版本配置

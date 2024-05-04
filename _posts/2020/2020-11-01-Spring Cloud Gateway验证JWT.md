@@ -1,6 +1,6 @@
 ---
 title: Spring Cloud Gateway验证JWT
-tags: [Java, 软件开发, Spring, Spring Cloud, Spring Cloud Gateway]
+tags: [Spring Cloud]
 ---
 
 ## 无需验证的URI集合配置

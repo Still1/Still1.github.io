@@ -1,6 +1,6 @@
 ---
 title: Spring Boot项目起步配置
-tags: [软件开发, Java, Spring, Spring Boot]
+tags: [Spring Boot]
 ---
 
 ## 版本配置

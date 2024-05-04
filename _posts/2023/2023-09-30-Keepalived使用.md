@@ -1,6 +1,6 @@
 ---
 title: Keepalived使用
-tags: [Keepalived, 系统运维, 集群系统]
+tags: [Keepalived]
 ---
 
 ## Keepalived安装

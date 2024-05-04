@@ -1,6 +1,6 @@
 ---
 title: Spring Boot项目配置Servlet、Filter、Listener
-tags: [软件开发, Java, Spring, Spring Boot]
+tags: [Spring Boot, Servlet]
 ---
 
 ## 代码实例

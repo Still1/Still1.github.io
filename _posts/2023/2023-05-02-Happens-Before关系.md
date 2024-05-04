@@ -1,6 +1,6 @@
 ---
 title: Happens-Before关系
-tags: [概念原理, 多线程]
+tags: [概念原理]
 ---
 
 ## 定义

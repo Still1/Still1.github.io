@@ -1,6 +1,6 @@
 ---
 title: Acquire and Release语义
-tags: [概念原理, 多线程]
+tags: [概念原理]
 ---
 
 ## 概述

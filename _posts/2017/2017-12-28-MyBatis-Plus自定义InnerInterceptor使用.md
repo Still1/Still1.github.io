@@ -1,6 +1,6 @@
 ---
 title: MyBatis-Plus自定义InnerInterceptor使用
-tags: [软件开发, Java, MyBatis-Plus]
+tags: [MyBatis-Plus]
 ---
 
 ## 代码实例

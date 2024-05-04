@@ -1,6 +1,6 @@
 ---
 title: RestTemplate使用
-tags: [软件开发, Java, Spring]
+tags: [Spring]
 ---
 
 ## 底层选择

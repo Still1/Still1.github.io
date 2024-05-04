@@ -1,6 +1,6 @@
 ---
 title: Spring MVC HandlerInterceptor使用
-tags: [软件开发, Java, Spring, Spring MVC]
+tags: [Spring MVC]
 ---
 
 ## 代码实例

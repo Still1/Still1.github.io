@@ -1,6 +1,6 @@
 ---
 title: Spring通过Resource获取文件流
-tags: [软件开发, Java, Spring]
+tags: [Spring]
 ---
 
 ## 代码实例

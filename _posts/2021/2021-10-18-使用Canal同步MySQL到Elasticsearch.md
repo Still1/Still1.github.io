@@ -1,6 +1,6 @@
 ---
 title: 使用Canal同步MySQL到Elasticsearch
-tags: [软件开发, Java, Canal, RabbitMQ, Elasticsearch, MySQL]
+tags: [Canal]
 ---
 
 ## MySQL配置

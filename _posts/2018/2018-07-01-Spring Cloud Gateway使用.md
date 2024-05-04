@@ -1,6 +1,6 @@
 ---
 title: Spring Cloud Gateway使用
-tags: [软件开发, Java, Spring, Spring Cloud, Spring Cloud Gateway, 分布式系统]
+tags: [Spring Cloud]
 ---
 
 ## 项目依赖

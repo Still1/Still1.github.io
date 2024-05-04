@@ -1,6 +1,6 @@
 ---
 title: Spring Boot配置文件中获取Maven信息
-tags: [软件开发, Java, Spring, Spring Boot, Maven]
+tags: [Spring Boot, Maven]
 ---
 
 ## 代码实例

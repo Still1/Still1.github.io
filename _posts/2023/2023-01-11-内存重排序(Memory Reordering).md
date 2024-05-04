@@ -1,6 +1,6 @@
 ---
 title: 内存重排序(Memory Reordering)
-tags: [概念原理, 多线程]
+tags: [概念原理, 计算机组成原理]
 ---
 
 ## 概念

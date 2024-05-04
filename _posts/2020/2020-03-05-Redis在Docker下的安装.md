@@ -1,6 +1,6 @@
 ---
 title: Redis在Docker下的安装
-tags: [软件开发, 系统运维, Docker, Redis]
+tags: [Redis]
 ---
 
 ## 下载Redis镜像

@@ -1,6 +1,6 @@
 ---
 title: Spring Security工作原理
-tags: [概念原理, Java, Spring, Spring Security, 网络安全]
+tags: [概念原理, Spring Security]
 ---
 
 ## 基本架构
