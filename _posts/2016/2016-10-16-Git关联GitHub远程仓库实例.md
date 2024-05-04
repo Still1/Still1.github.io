@@ -1,6 +1,6 @@
 ---
 title: Git关联GitHub远程仓库实例
-tags: [Git, GitHub]
+tags: [Git]
 ---
 ## 代码例子
 
