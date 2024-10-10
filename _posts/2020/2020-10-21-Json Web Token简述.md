@@ -3,7 +3,7 @@ title: Java Web Token简述
 tags: [网络安全, 概念原理]
 ---
 
-## Java Web Token信息组成
+## Json Web Token信息组成
 
 Java Web Token信息由三部分组成，分别是
 
@@ -44,7 +44,7 @@ HMACSHA256(
 )
 ```
 
-## Java Web Token的生成
+## Json Web Token的生成
 
 依次对header、payload、verify signature三部分的信息作base64编码，然后通过`.`字符拼接起来，即可生成token。根据上文例子的信息，可以生成以下token
 
@@ -63,6 +63,6 @@ base64Signature = base64UrlEncode(signature);
 token = base64Header + "." + base64Payload + "." + base64Signature
 ```
 
-## Java Web Token的验证
+## Json Web Token的验证
 
 通过重新计算token的摘要信息，与token中的提供摘要信息进行对比，即可验证token是否曾被篡改

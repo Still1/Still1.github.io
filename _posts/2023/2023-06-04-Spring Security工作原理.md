@@ -51,7 +51,7 @@ public SecurityFilterChain formFilterChain(HttpSecurity http) throws Exception {
 * `ExceptionTranslationFilter`
 * `FilterSecurityInterceptor`
 
-可以通过注册多个`SecurityFilterChain`的bean，并指定不同的匹配条件（如URL的匹配规则）和优先匹配顺序，以达到在不同的情况下使用不同的安全规则，详情可参考[Spring Security同时支持用户名密码登录和OAuth登录#认证配置](https://blog.oliverclio.com/2023/02/09/Spring-Security%E5%90%8C%E6%97%B6%E6%94%AF%E6%8C%81%E7%94%A8%E6%88%B7%E5%90%8D%E5%AF%86%E7%A0%81%E7%99%BB%E5%BD%95%E5%92%8COAuth%E7%99%BB%E5%BD%95.html#%E8%AE%A4%E8%AF%81%E9%85%8D%E7%BD%AE)
+可以通过注册多个`SecurityFilterChain`的bean，并指定不同的匹配条件（如URL的匹配规则）和优先匹配顺序，以达到在不同的情况下使用不同的安全规则，详情可参考[[Spring Security同时支持用户名密码登录和OAuth登录#认证配置]]
 
 ## 认证架构
 
@@ -78,7 +78,7 @@ public SecurityFilterChain formFilterChain(HttpSecurity http) throws Exception {
 
 ### ProviderManager身份认证的过程
 
-通过配置可向特定的`ProviderManager`注册多个`AuthenticationProvider`，不同的`AuthenticationProvider`负责特定形式的身份认证，如根据用户名密码认证、根据JWT进行认证等。`ProviderManager`根据注册的顺序依次调用各个`AuthenticationProvider`，直到身份认证成功。假如调用完所有的`AuthenticationProvider`都无法认证成功，则会将身份认证工作委托给父`AuthenticationManager`（通常也是一个`ProviderManager`）
+通过配置可向特定的`ProviderManager`注册多个`AuthenticationProvider`，不同的`AuthenticationProvider`负责特定形式的身份认证，如根据用户名密码认证、根据JWT进行认证等。`AuthenticationProvider`会根据提供的`Authentication`类型判断能否处理当前形式的身份认证。`ProviderManager`根据注册的顺序依次调用各个`AuthenticationProvider`，直到身份认证成功。假如调用完所有的`AuthenticationProvider`都无法认证成功，则会将身份认证工作委托给父`AuthenticationManager`（通常也是一个`ProviderManager`）
 
 <img src="https://oliver-blog.oss-cn-shenzhen.aliyuncs.com/20230604235213.png" width="700px" />
 
